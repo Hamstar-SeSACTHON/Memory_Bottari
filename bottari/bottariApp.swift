@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct bottariApp: App {
+    @StateObject private var container = DIContainer.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(container)
         }
     }
 }
