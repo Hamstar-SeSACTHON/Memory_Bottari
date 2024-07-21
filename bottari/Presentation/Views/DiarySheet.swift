@@ -11,6 +11,11 @@ struct DiarySheet: View {
     @State private var content = ""
     @ObservedObject var viewModel: DiarySheetViewModel
     
+    var assistantID: String {
+        guard let assistantID = Bundle.main.object(forInfoDictionaryKey: "ASSISTANT_ID") as? String else { return "" }
+        return assistantID
+    }
+    
     init(viewModel: DiarySheetViewModel) {
         self._viewModel = ObservedObject(initialValue: viewModel)
     }
@@ -33,7 +38,7 @@ struct DiarySheet: View {
         }
         
         Button("런 완료") {
-            viewModel.createRun(threadID: viewModel.apiResponse?.id ?? "0", assistantID: "asst_ubDWBZLsXJYfBPu1QLBUM5v7")
+            viewModel.createRun(threadID: viewModel.apiResponse?.id ?? "0", assistantID: assistantID)
         }
         
         Button("런스텝 완료") {

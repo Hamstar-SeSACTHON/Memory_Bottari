@@ -7,19 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070E995E2C4CEC4F00A319C3 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E995D2C4CEC4F00A319C3 /* Quiz.swift */; };
+		070E99602C4CEC5A00A319C3 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E995F2C4CEC5A00A319C3 /* Memory.swift */; };
+		070E99672C4CF49C00A319C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E99662C4CF49C00A319C3 /* MainView.swift */; };
+		070E99692C4CF56900A319C3 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E99682C4CF56900A319C3 /* MemoryView.swift */; };
 		075655462C4CD80100376467 /* bottariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075655452C4CD80100376467 /* bottariApp.swift */; };
 		075655482C4CD80100376467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075655472C4CD80100376467 /* ContentView.swift */; };
 		0756554A2C4CD80300376467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075655492C4CD80300376467 /* Assets.xcassets */; };
 		0756554E2C4CD80300376467 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0756554D2C4CD80300376467 /* Preview Assets.xcassets */; };
+		07C002A22C4D791500BC266E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002A12C4D791500BC266E /* APIService.swift */; };
+		07C002A42C4D7A6100BC266E /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002A32C4D7A6100BC266E /* EndPoint.swift */; };
+		07C002A62C4D8A6F00BC266E /* ThreadRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002A52C4D8A6F00BC266E /* ThreadRepository.swift */; };
+		07C002A82C4D8ACA00BC266E /* ThreadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002A72C4D8ACA00BC266E /* ThreadResponse.swift */; };
+		07C002AA2C4D8AE300BC266E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002A92C4D8AE300BC266E /* Message.swift */; };
+		07C002AC2C4D8AF300BC266E /* MessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002AB2C4D8AF300BC266E /* MessageBody.swift */; };
+		07C002AE2C4D8B4100BC266E /* ThreadRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002AD2C4D8B4100BC266E /* ThreadRepositoryImpl.swift */; };
+		07C002B02C4D8C6800BC266E /* CreateThreadUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002AF2C4D8C6800BC266E /* CreateThreadUseCase.swift */; };
+		07C002B22C4D8FE300BC266E /* DiarySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002B12C4D8FE300BC266E /* DiarySheet.swift */; };
+		07C002B42C4D97F800BC266E /* DiarySheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002B32C4D97F800BC266E /* DiarySheetViewModel.swift */; };
+		07C002B72C4D9C9600BC266E /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002B62C4D9C9600BC266E /* DIContainer.swift */; };
+		07C002B92C4DA2CD00BC266E /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002B82C4DA2CD00BC266E /* MessageRepository.swift */; };
+		07C002BB2C4DA47200BC266E /* CreateMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002BA2C4DA47200BC266E /* CreateMessageResponse.swift */; };
+		07C002BD2C4DA52400BC266E /* MessageRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002BC2C4DA52400BC266E /* MessageRepositoryImpl.swift */; };
+		07C002BF2C4DA8B500BC266E /* CreateMessageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002BE2C4DA8B500BC266E /* CreateMessageUseCase.swift */; };
+		07C002C12C4DAD7900BC266E /* RunRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002C02C4DAD7900BC266E /* RunRepository.swift */; };
+		07C002C32C4DB02700BC266E /* RunResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002C22C4DB02700BC266E /* RunResponse.swift */; };
+		07C002C62C4DB0D500BC266E /* RunRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002C52C4DB0D500BC266E /* RunRequest.swift */; };
+		07C002CA2C4DB1CD00BC266E /* RunRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002C92C4DB1CD00BC266E /* RunRepositoryImpl.swift */; };
+		07C002CC2C4DB26F00BC266E /* CreateRunUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002CB2C4DB26F00BC266E /* CreateRunUseCase.swift */; };
+		07C002CF2C4DB50F00BC266E /* RunStepResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002CE2C4DB50F00BC266E /* RunStepResponse.swift */; };
+		07C002D12C4DB56F00BC266E /* RunStepRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D02C4DB56F00BC266E /* RunStepRepository.swift */; };
+		07C002D42C4DB5D700BC266E /* RunStepRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D32C4DB5D700BC266E /* RunStepRepositoryImpl.swift */; };
+		07C002D62C4DB71A00BC266E /* ListRunStepUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */; };
+		07C002D82C4DBB1300BC266E /* RetrieveMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */; };
+		07C002DA2C4DBC0000BC266E /* RetrieveMessageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070E995D2C4CEC4F00A319C3 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		070E995F2C4CEC5A00A319C3 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		070E99662C4CF49C00A319C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		070E99682C4CF56900A319C3 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
 		075655422C4CD80100376467 /* bottari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bottari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		075655452C4CD80100376467 /* bottariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottariApp.swift; sourceTree = "<group>"; };
 		075655472C4CD80100376467 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		075655492C4CD80300376467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0756554B2C4CD80300376467 /* bottari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bottari.entitlements; sourceTree = "<group>"; };
 		0756554D2C4CD80300376467 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07C002A12C4D791500BC266E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		07C002A32C4D7A6100BC266E /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		07C002A52C4D8A6F00BC266E /* ThreadRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadRepository.swift; sourceTree = "<group>"; };
+		07C002A72C4D8ACA00BC266E /* ThreadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadResponse.swift; sourceTree = "<group>"; };
+		07C002A92C4D8AE300BC266E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		07C002AB2C4D8AF300BC266E /* MessageBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBody.swift; sourceTree = "<group>"; };
+		07C002AD2C4D8B4100BC266E /* ThreadRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadRepositoryImpl.swift; sourceTree = "<group>"; };
+		07C002AF2C4D8C6800BC266E /* CreateThreadUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadUseCase.swift; sourceTree = "<group>"; };
+		07C002B12C4D8FE300BC266E /* DiarySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiarySheet.swift; sourceTree = "<group>"; };
+		07C002B32C4D97F800BC266E /* DiarySheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiarySheetViewModel.swift; sourceTree = "<group>"; };
+		07C002B62C4D9C9600BC266E /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		07C002B82C4DA2CD00BC266E /* MessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepository.swift; sourceTree = "<group>"; };
+		07C002BA2C4DA47200BC266E /* CreateMessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMessageResponse.swift; sourceTree = "<group>"; };
+		07C002BC2C4DA52400BC266E /* MessageRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepositoryImpl.swift; sourceTree = "<group>"; };
+		07C002BE2C4DA8B500BC266E /* CreateMessageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMessageUseCase.swift; sourceTree = "<group>"; };
+		07C002C02C4DAD7900BC266E /* RunRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunRepository.swift; sourceTree = "<group>"; };
+		07C002C22C4DB02700BC266E /* RunResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunResponse.swift; sourceTree = "<group>"; };
+		07C002C52C4DB0D500BC266E /* RunRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunRequest.swift; sourceTree = "<group>"; };
+		07C002C92C4DB1CD00BC266E /* RunRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunRepositoryImpl.swift; sourceTree = "<group>"; };
+		07C002CB2C4DB26F00BC266E /* CreateRunUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRunUseCase.swift; sourceTree = "<group>"; };
+		07C002CE2C4DB50F00BC266E /* RunStepResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStepResponse.swift; sourceTree = "<group>"; };
+		07C002D02C4DB56F00BC266E /* RunStepRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStepRepository.swift; sourceTree = "<group>"; };
+		07C002D32C4DB5D700BC266E /* RunStepRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStepRepositoryImpl.swift; sourceTree = "<group>"; };
+		07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRunStepUseCase.swift; sourceTree = "<group>"; };
+		07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageResponse.swift; sourceTree = "<group>"; };
+		07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageUseCase.swift; sourceTree = "<group>"; };
+		07C002DC2C4DC5B600BC266E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +94,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070E995C2C4CEC4000A319C3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				07C002CD2C4DB50400BC266E /* RunStep */,
+				07C002C82C4DB0F500BC266E /* Thread */,
+				07C002C72C4DB0D800BC266E /* Message */,
+				07C002C42C4DB0CB00BC266E /* Run */,
+				070E995D2C4CEC4F00A319C3 /* Quiz.swift */,
+				070E995F2C4CEC5A00A319C3 /* Memory.swift */,
+				07C002A92C4D8AE300BC266E /* Message.swift */,
+				07C002AB2C4D8AF300BC266E /* MessageBody.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		070E99642C4CF48800A319C3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				070E99702C4D0F6300A319C3 /* ViewModels */,
+				070E99652C4CF49000A319C3 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		070E99652C4CF49000A319C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				070E99662C4CF49C00A319C3 /* MainView.swift */,
+				070E99682C4CF56900A319C3 /* MemoryView.swift */,
+				075655472C4CD80100376467 /* ContentView.swift */,
+				07C002B12C4D8FE300BC266E /* DiarySheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		070E996A2C4D0EF000A319C3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				070E996E2C4D0F4600A319C3 /* Interfaces */,
+				070E995C2C4CEC4000A319C3 /* Entities */,
+				070E996D2C4D0F3800A319C3 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		070E996B2C4D0EF700A319C3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				07C002A02C4D790800BC266E /* API */,
+				070E99712C4D0F7500A319C3 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		070E996C2C4D0F1F00A319C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				075655492C4CD80300376467 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		070E996D2C4D0F3800A319C3 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				07C002AF2C4D8C6800BC266E /* CreateThreadUseCase.swift */,
+				07C002BE2C4DA8B500BC266E /* CreateMessageUseCase.swift */,
+				07C002CB2C4DB26F00BC266E /* CreateRunUseCase.swift */,
+				07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */,
+				07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		070E996E2C4D0F4600A319C3 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				070E996F2C4D0F5600A319C3 /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		070E996F2C4D0F5600A319C3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				07C002A52C4D8A6F00BC266E /* ThreadRepository.swift */,
+				07C002B82C4DA2CD00BC266E /* MessageRepository.swift */,
+				07C002C02C4DAD7900BC266E /* RunRepository.swift */,
+				07C002D02C4DB56F00BC266E /* RunStepRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		070E99702C4D0F6300A319C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				07C002B32C4D97F800BC266E /* DiarySheetViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		070E99712C4D0F7500A319C3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				07C002AD2C4D8B4100BC266E /* ThreadRepositoryImpl.swift */,
+				07C002BC2C4DA52400BC266E /* MessageRepositoryImpl.swift */,
+				07C002C92C4DB1CD00BC266E /* RunRepositoryImpl.swift */,
+				07C002D32C4DB5D700BC266E /* RunStepRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		075655392C4CD80100376467 = {
 			isa = PBXGroup;
 			children = (
@@ -52,9 +225,13 @@
 		075655442C4CD80100376467 /* bottari */ = {
 			isa = PBXGroup;
 			children = (
+				07C002DC2C4DC5B600BC266E /* Info.plist */,
+				07C002B52C4D9C8700BC266E /* Infrastructure */,
+				070E996C2C4D0F1F00A319C3 /* Resources */,
+				070E996B2C4D0EF700A319C3 /* Data */,
+				070E996A2C4D0EF000A319C3 /* Domain */,
+				070E99642C4CF48800A319C3 /* Presentation */,
 				075655452C4CD80100376467 /* bottariApp.swift */,
-				075655472C4CD80100376467 /* ContentView.swift */,
-				075655492C4CD80300376467 /* Assets.xcassets */,
 				0756554B2C4CD80300376467 /* bottari.entitlements */,
 				0756554C2C4CD80300376467 /* Preview Content */,
 			);
@@ -67,6 +244,57 @@
 				0756554D2C4CD80300376467 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07C002A02C4D790800BC266E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				07C002A12C4D791500BC266E /* APIService.swift */,
+				07C002A32C4D7A6100BC266E /* EndPoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		07C002B52C4D9C8700BC266E /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				07C002B62C4D9C9600BC266E /* DIContainer.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		07C002C42C4DB0CB00BC266E /* Run */ = {
+			isa = PBXGroup;
+			children = (
+				07C002C22C4DB02700BC266E /* RunResponse.swift */,
+				07C002C52C4DB0D500BC266E /* RunRequest.swift */,
+			);
+			path = Run;
+			sourceTree = "<group>";
+		};
+		07C002C72C4DB0D800BC266E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				07C002BA2C4DA47200BC266E /* CreateMessageResponse.swift */,
+				07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		07C002C82C4DB0F500BC266E /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				07C002A72C4D8ACA00BC266E /* ThreadResponse.swift */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		07C002CD2C4DB50400BC266E /* RunStep */ = {
+			isa = PBXGroup;
+			children = (
+				07C002CE2C4DB50F00BC266E /* RunStepResponse.swift */,
+			);
+			path = RunStep;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +313,8 @@
 			dependencies = (
 			);
 			name = bottari;
+			packageProductDependencies = (
+			);
 			productName = bottari;
 			productReference = 075655422C4CD80100376467 /* bottari.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +343,8 @@
 				Base,
 			);
 			mainGroup = 075655392C4CD80100376467;
+			packageReferences = (
+			);
 			productRefGroup = 075655432C4CD80100376467 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +371,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070E99692C4CF56900A319C3 /* MemoryView.swift in Sources */,
+				07C002BD2C4DA52400BC266E /* MessageRepositoryImpl.swift in Sources */,
+				07C002A22C4D791500BC266E /* APIService.swift in Sources */,
+				07C002B42C4D97F800BC266E /* DiarySheetViewModel.swift in Sources */,
+				07C002A42C4D7A6100BC266E /* EndPoint.swift in Sources */,
+				07C002AC2C4D8AF300BC266E /* MessageBody.swift in Sources */,
+				07C002B72C4D9C9600BC266E /* DIContainer.swift in Sources */,
+				07C002CA2C4DB1CD00BC266E /* RunRepositoryImpl.swift in Sources */,
+				07C002B22C4D8FE300BC266E /* DiarySheet.swift in Sources */,
+				07C002AE2C4D8B4100BC266E /* ThreadRepositoryImpl.swift in Sources */,
+				07C002A82C4D8ACA00BC266E /* ThreadResponse.swift in Sources */,
+				07C002DA2C4DBC0000BC266E /* RetrieveMessageUseCase.swift in Sources */,
+				070E99602C4CEC5A00A319C3 /* Memory.swift in Sources */,
+				07C002A62C4D8A6F00BC266E /* ThreadRepository.swift in Sources */,
+				07C002B92C4DA2CD00BC266E /* MessageRepository.swift in Sources */,
+				07C002D82C4DBB1300BC266E /* RetrieveMessageResponse.swift in Sources */,
+				07C002AA2C4D8AE300BC266E /* Message.swift in Sources */,
+				07C002D12C4DB56F00BC266E /* RunStepRepository.swift in Sources */,
+				07C002B02C4D8C6800BC266E /* CreateThreadUseCase.swift in Sources */,
+				070E99672C4CF49C00A319C3 /* MainView.swift in Sources */,
+				07C002BB2C4DA47200BC266E /* CreateMessageResponse.swift in Sources */,
+				07C002C62C4DB0D500BC266E /* RunRequest.swift in Sources */,
 				075655482C4CD80100376467 /* ContentView.swift in Sources */,
+				07C002D42C4DB5D700BC266E /* RunStepRepositoryImpl.swift in Sources */,
+				07C002BF2C4DA8B500BC266E /* CreateMessageUseCase.swift in Sources */,
+				07C002C12C4DAD7900BC266E /* RunRepository.swift in Sources */,
+				07C002C32C4DB02700BC266E /* RunResponse.swift in Sources */,
+				07C002D62C4DB71A00BC266E /* ListRunStepUseCase.swift in Sources */,
+				07C002CC2C4DB26F00BC266E /* CreateRunUseCase.swift in Sources */,
+				07C002CF2C4DB50F00BC266E /* RunStepResponse.swift in Sources */,
 				075655462C4CD80100376467 /* bottariApp.swift in Sources */,
+				070E995E2C4CEC4F00A319C3 /* Quiz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +536,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bottari/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +576,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bottari/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
