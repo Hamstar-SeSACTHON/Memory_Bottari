@@ -46,6 +46,75 @@
 <br />
 
 
+### 🗂️ Folder Structure
+
+```
+📦bottari
+ ┣ 📂Data
+ ┃ ┣ 📂API
+ ┃ ┃ ┣ 📜APIService.swift
+ ┃ ┃ ┗ 📜EndPoint.swift
+ ┃ ┗ 📂Repositories
+ ┃ ┃ ┣ 📜MessageRepositoryImpl.swift
+ ┃ ┃ ┣ 📜RunRepositoryImpl.swift
+ ┃ ┃ ┣ 📜RunStepRepositoryImpl.swift
+ ┃ ┃ ┗ 📜ThreadRepositoryImpl.swift
+ ┣ 📂Domain
+ ┃ ┣ 📂Entities
+ ┃ ┃ ┣ 📂Message
+ ┃ ┃ ┃ ┣ 📜CreateMessageResponse.swift
+ ┃ ┃ ┃ ┗ 📜RetrieveMessageResponse.swift
+ ┃ ┃ ┣ 📂Run
+ ┃ ┃ ┃ ┣ 📜RunRequest.swift
+ ┃ ┃ ┃ ┗ 📜RunResponse.swift
+ ┃ ┃ ┣ 📂RunStep
+ ┃ ┃ ┃ ┗ 📜RunStepResponse.swift
+ ┃ ┃ ┣ 📂Thread
+ ┃ ┃ ┃ ┗ 📜ThreadResponse.swift
+ ┃ ┃ ┣ 📜Memory.swift
+ ┃ ┃ ┣ 📜Message.swift
+ ┃ ┃ ┣ 📜MessageBody.swift
+ ┃ ┃ ┗ 📜Quiz.swift
+ ┃ ┣ 📂Interfaces
+ ┃ ┃ ┗ 📂Repositories
+ ┃ ┃ ┃ ┣ 📜MessageRepository.swift
+ ┃ ┃ ┃ ┣ 📜RunRepository.swift
+ ┃ ┃ ┃ ┣ 📜RunStepRepository.swift
+ ┃ ┃ ┃ ┗ 📜ThreadRepository.swift
+ ┃ ┗ 📂UseCases
+ ┃ ┃ ┣ 📜CreateMessageUseCase.swift
+ ┃ ┃ ┣ 📜CreateRunUseCase.swift
+ ┃ ┃ ┣ 📜CreateThreadUseCase.swift
+ ┃ ┃ ┣ 📜ListRunStepUseCase.swift
+ ┃ ┃ ┗ 📜RetrieveMessageUseCase.swift
+ ┣ 📂Infrastructure
+ ┃ ┗ 📜DIContainer.swift
+ ┣ 📂Presentation
+ ┃ ┣ 📂ViewModels
+ ┃ ┃ ┗ 📜DiarySheetViewModel.swift
+ ┃ ┗ 📂Views
+ ┃ ┃ ┣ 📜ContentView.swift
+ ┃ ┃ ┣ 📜DiarySheet.swift
+ ┃ ┃ ┣ 📜MainView.swift
+ ┃ ┃ ┗ 📜MemoryView.swift
+ ┣ 📂Preview Content
+ ┃ ┗ 📂Preview Assets.xcassets
+ ┃ ┃ ┗ 📜Contents.json
+ ┣ 📂Resources
+ ┃ ┗ 📂Assets.xcassets
+ ┃ ┃ ┣ 📂AccentColor.colorset
+ ┃ ┃ ┃ ┗ 📜Contents.json
+ ┃ ┃ ┣ 📂AppIcon.appiconset
+ ┃ ┃ ┃ ┗ 📜Contents.json
+ ┃ ┃ ┗ 📜Contents.json
+ ┣ 📂bottari.xcodeproj
+ ┃ ┗ 📂project.xcworkspace
+ ┃ ┃ ┗ 📜contents.xcworkspacedata
+ ┣ 📜Info.plist
+ ┣ 📜bottari.entitlements
+ ┗ 📜bottariApp.swift
+```
+
 
 
 ### 📌 Git Convention & Strategy
