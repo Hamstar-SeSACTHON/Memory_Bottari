@@ -5,7 +5,7 @@
 
 |<img src="https://avatars.githubusercontent.com/u/114010099?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/126383419?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/127755029?v=4" width="150" height="150"/>|
 |:-:|:-:|:-:|
-|**iOS Developer**<br/>00306<br/>@00306|**Product Designer**<br/>SONIA<br/>@sonia-nines|**iOS Developer**<br/>suminjang<br/>@sumintnals|
+|**iOS Developer**<br/>송지혁<br/>[00306](https://github.com/00306)|**Product Designer**<br/>박민교<br/>[SONIA](https://github.com/sonia-nines)|**iOS Developer**<br/>장수민<br/>[suminjang](https://github.com/sumintnals)|
 
 
 <br />
@@ -30,7 +30,7 @@
 * Combine
 * SwiftData
 * Push Notification
-* ChatGPT API
+* Assistant API
 
 
 <br />
@@ -40,11 +40,12 @@
 
  **MVVM + Clean Architecture**
 
-
-사진 추가 예정.
+![CleanArchitecture](https://github.com/user-attachments/assets/01158f28-f8c4-4128-a386-5f3c6d781d4d)
 
 
 <br />
+
+
 
 
 ### 📌 Git Convention & Strategy
