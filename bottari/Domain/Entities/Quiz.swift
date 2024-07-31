@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Quiz {
+struct Quiz: Codable {
     let date: Date
     let question: String
     let options: [String]

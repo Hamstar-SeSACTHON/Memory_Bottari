@@ -41,6 +41,9 @@
 		07C002D62C4DB71A00BC266E /* ListRunStepUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */; };
 		07C002D82C4DBB1300BC266E /* RetrieveMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */; };
 		07C002DA2C4DBC0000BC266E /* RetrieveMessageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */; };
+		07EDE4D92C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */; };
+		07EDE4DC2C5A99B200E757C1 /* AssistantInteractionFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */; };
+		07EDE4DE2C5A9A1700E757C1 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +84,9 @@
 		07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageResponse.swift; sourceTree = "<group>"; };
 		07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageUseCase.swift; sourceTree = "<group>"; };
 		07C002DC2C4DC5B600BC266E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacadeImpl.swift; sourceTree = "<group>"; };
+		07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacade.swift; sourceTree = "<group>"; };
+		07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 		070E996B2C4D0EF700A319C3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				07EDE4D82C5A99A300E757C1 /* Facades */,
 				07C002A02C4D790800BC266E /* API */,
 				070E99712C4D0F7500A319C3 /* Repositories */,
 			);
@@ -171,6 +178,7 @@
 		070E996E2C4D0F4600A319C3 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				07EDE4DB2C5A99B200E757C1 /* Facades */,
 				070E996F2C4D0F5600A319C3 /* Repositories */,
 			);
 			path = Interfaces;
@@ -233,6 +241,7 @@
 				070E99642C4CF48800A319C3 /* Presentation */,
 				075655452C4CD80100376467 /* bottariApp.swift */,
 				0756554B2C4CD80300376467 /* bottari.entitlements */,
+				07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */,
 				0756554C2C4CD80300376467 /* Preview Content */,
 			);
 			path = bottari;
@@ -295,6 +304,22 @@
 				07C002CE2C4DB50F00BC266E /* RunStepResponse.swift */,
 			);
 			path = RunStep;
+			sourceTree = "<group>";
+		};
+		07EDE4D82C5A99A300E757C1 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */,
+			);
+			path = Facades;
+			sourceTree = "<group>";
+		};
+		07EDE4DB2C5A99B200E757C1 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */,
+			);
+			path = Facades;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +386,7 @@
 			files = (
 				0756554E2C4CD80300376467 /* Preview Assets.xcassets in Resources */,
 				0756554A2C4CD80300376467 /* Assets.xcassets in Resources */,
+				07EDE4DE2C5A9A1700E757C1 /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +407,7 @@
 				07C002CA2C4DB1CD00BC266E /* RunRepositoryImpl.swift in Sources */,
 				07C002B22C4D8FE300BC266E /* DiarySheet.swift in Sources */,
 				07C002AE2C4D8B4100BC266E /* ThreadRepositoryImpl.swift in Sources */,
+				07EDE4DC2C5A99B200E757C1 /* AssistantInteractionFacade.swift in Sources */,
 				07C002A82C4D8ACA00BC266E /* ThreadResponse.swift in Sources */,
 				07C002DA2C4DBC0000BC266E /* RetrieveMessageUseCase.swift in Sources */,
 				070E99602C4CEC5A00A319C3 /* Memory.swift in Sources */,
@@ -403,6 +430,7 @@
 				07C002CF2C4DB50F00BC266E /* RunStepResponse.swift in Sources */,
 				075655462C4CD80100376467 /* bottariApp.swift in Sources */,
 				070E995E2C4CEC4F00A319C3 /* Quiz.swift in Sources */,
+				07EDE4D92C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +553,7 @@
 		};
 		075655522C4CD80300376467 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -565,6 +594,7 @@
 		};
 		075655532C4CD80300376467 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
