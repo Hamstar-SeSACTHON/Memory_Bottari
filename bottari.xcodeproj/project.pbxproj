@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		070E995E2C4CEC4F00A319C3 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E995D2C4CEC4F00A319C3 /* Quiz.swift */; };
-		070E99602C4CEC5A00A319C3 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E995F2C4CEC5A00A319C3 /* Memory.swift */; };
+		070E99602C4CEC5A00A319C3 /* MemoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E995F2C4CEC5A00A319C3 /* MemoryEntity.swift */; };
 		070E99672C4CF49C00A319C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E99662C4CF49C00A319C3 /* MainView.swift */; };
 		070E99692C4CF56900A319C3 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E99682C4CF56900A319C3 /* MemoryView.swift */; };
 		0715CE722C5B57D200A313D4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715CE712C5B57D200A313D4 /* SearchView.swift */; };
@@ -55,6 +55,16 @@
 		07CC805E2C5B873A00BE2250 /* MemoryCategoryGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CC805D2C5B873A00BE2250 /* MemoryCategoryGrid.swift */; };
 		07CC80612C5B89AF00BE2250 /* CategorizedMemoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CC80602C5B89AF00BE2250 /* CategorizedMemoriesView.swift */; };
 		07CC80632C5B8D5400BE2250 /* Memorylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CC80622C5B8D5400BE2250 /* Memorylist.swift */; };
+		79851E212C5A7F980055C451 /* MemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E202C5A7F980055C451 /* MemoryRepository.swift */; };
+		79851E232C5A80F40055C451 /* MemoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E222C5A80F40055C451 /* MemoryUseCase.swift */; };
+		79851E252C5A81600055C451 /* MemoryRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E242C5A81600055C451 /* MemoryRepositoryImpl.swift */; };
+		79851E2A2C5A81F30055C451 /* MemorySwiftDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E292C5A81F30055C451 /* MemorySwiftDataImpl.swift */; };
+		79851E2C2C5A8BF50055C451 /* JournalSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E2B2C5A8BF50055C451 /* JournalSelectionView.swift */; };
+		79851E2E2C5A8C0F0055C451 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E2D2C5A8C0F0055C451 /* JournalEntryView.swift */; };
+		79851E302C5A8C200055C451 /* JournalEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E2F2C5A8C200055C451 /* JournalEntryViewModel.swift */; };
+		79851E322C5A9B770055C451 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E312C5A9B770055C451 /* Memory.swift */; };
+		79851E342C5AAB2F0055C451 /* MemoryDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */; };
+		79851E362C5AAD020055C451 /* MemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E352C5AAD020055C451 /* MemoryDAO.swift */; };
 		07E29A5C2C5B2241004668C5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E29A5B2C5B2241004668C5 /* ImagePicker.swift */; };
 		07E29A5E2C5B2275004668C5 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */; };
 		07EDE4D92C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */; };
@@ -64,7 +74,7 @@
 
 /* Begin PBXFileReference section */
 		070E995D2C4CEC4F00A319C3 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
-		070E995F2C4CEC5A00A319C3 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		070E995F2C4CEC5A00A319C3 /* MemoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryEntity.swift; sourceTree = "<group>"; tabWidth = 2; };
 		070E99662C4CF49C00A319C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		070E99682C4CF56900A319C3 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
 		0715CE712C5B57D200A313D4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -106,13 +116,23 @@
 		07C002CE2C4DB50F00BC266E /* RunStepResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStepResponse.swift; sourceTree = "<group>"; };
 		07C002D02C4DB56F00BC266E /* RunStepRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStepRepository.swift; sourceTree = "<group>"; };
 		07C002D32C4DB5D700BC266E /* RunStepRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStepRepositoryImpl.swift; sourceTree = "<group>"; };
-		07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRunStepUseCase.swift; sourceTree = "<group>"; };
+		07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ListRunStepUseCase.swift; sourceTree = "<group>"; tabWidth = 2; };
 		07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageResponse.swift; sourceTree = "<group>"; };
 		07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageUseCase.swift; sourceTree = "<group>"; };
 		07C002DC2C4DC5B600BC266E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		07CC805D2C5B873A00BE2250 /* MemoryCategoryGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCategoryGrid.swift; sourceTree = "<group>"; };
 		07CC80602C5B89AF00BE2250 /* CategorizedMemoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizedMemoriesView.swift; sourceTree = "<group>"; };
 		07CC80622C5B8D5400BE2250 /* Memorylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorylist.swift; sourceTree = "<group>"; };
+		79851E202C5A7F980055C451 /* MemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryRepository.swift; sourceTree = "<group>"; };
+		79851E222C5A80F40055C451 /* MemoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryUseCase.swift; sourceTree = "<group>"; };
+		79851E242C5A81600055C451 /* MemoryRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryRepositoryImpl.swift; sourceTree = "<group>"; };
+		79851E292C5A81F30055C451 /* MemorySwiftDataImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySwiftDataImpl.swift; sourceTree = "<group>"; };
+		79851E2B2C5A8BF50055C451 /* JournalSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalSelectionView.swift; sourceTree = "<group>"; };
+		79851E2D2C5A8C0F0055C451 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
+		79851E2F2C5A8C200055C451 /* JournalEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewModel.swift; sourceTree = "<group>"; };
+		79851E312C5A9B770055C451 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDatabase.swift; sourceTree = "<group>"; };
+		79851E352C5AAD020055C451 /* MemoryDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDAO.swift; sourceTree = "<group>"; };
 		07E29A5B2C5B2241004668C5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacadeImpl.swift; sourceTree = "<group>"; };
@@ -140,9 +160,10 @@
 				07C002C72C4DB0D800BC266E /* Message */,
 				07C002C42C4DB0CB00BC266E /* Run */,
 				070E995D2C4CEC4F00A319C3 /* Quiz.swift */,
-				070E995F2C4CEC5A00A319C3 /* Memory.swift */,
+				070E995F2C4CEC5A00A319C3 /* MemoryEntity.swift */,
 				07C002A92C4D8AE300BC266E /* Message.swift */,
 				07C002AB2C4D8AF300BC266E /* MessageBody.swift */,
+				79851E312C5A9B770055C451 /* Memory.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -167,6 +188,8 @@
 				070E99662C4CF49C00A319C3 /* MainView.swift */,
 				075655472C4CD80100376467 /* ContentView.swift */,
 				07C002B12C4D8FE300BC266E /* DiarySheet.swift */,
+				79851E2B2C5A8BF50055C451 /* JournalSelectionView.swift */,
+				79851E2D2C5A8C0F0055C451 /* JournalEntryView.swift */,
 				07E29A5B2C5B2241004668C5 /* ImagePicker.swift */,
 			);
 			path = Views;
@@ -185,6 +208,7 @@
 		070E996B2C4D0EF700A319C3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				79851E282C5A81DD0055C451 /* SwiftData */,
 				07EDE4D82C5A99A300E757C1 /* Facades */,
 				07C002A02C4D790800BC266E /* API */,
 				070E99712C4D0F7500A319C3 /* Repositories */,
@@ -209,6 +233,7 @@
 				07C002CB2C4DB26F00BC266E /* CreateRunUseCase.swift */,
 				07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */,
 				07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */,
+				79851E222C5A80F40055C451 /* MemoryUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -229,6 +254,7 @@
 				07C002B82C4DA2CD00BC266E /* MessageRepository.swift */,
 				07C002C02C4DAD7900BC266E /* RunRepository.swift */,
 				07C002D02C4DB56F00BC266E /* RunStepRepository.swift */,
+				79851E202C5A7F980055C451 /* MemoryRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -237,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				07C002B32C4D97F800BC266E /* DiarySheetViewModel.swift */,
+				79851E2F2C5A8C200055C451 /* JournalEntryViewModel.swift */,
 				07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */,
 				0715CE732C5B61C000A313D4 /* SearchViewModel.swift */,
 			);
@@ -250,6 +277,7 @@
 				07C002BC2C4DA52400BC266E /* MessageRepositoryImpl.swift */,
 				07C002C92C4DB1CD00BC266E /* RunRepositoryImpl.swift */,
 				07C002D32C4DB5D700BC266E /* RunStepRepositoryImpl.swift */,
+				79851E242C5A81600055C451 /* MemoryRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -400,6 +428,14 @@
 			);
 			path = Memory;
 			sourceTree = "<group>";
+		79851E282C5A81DD0055C451 /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				79851E292C5A81F30055C451 /* MemorySwiftDataImpl.swift */,
+				79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */,
+				79851E352C5AAD020055C451 /* MemoryDAO.swift */,
+			);
+			path = SwiftData;
 		};
 		07EDE4D82C5A99A300E757C1 /* Facades */ = {
 			isa = PBXGroup;
@@ -497,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070E99692C4CF56900A319C3 /* MemoryView.swift in Sources */,
+				79851E362C5AAD020055C451 /* MemoryDAO.swift in Sources */,
 				07389D7B2C5B1680002D4FB3 /* Font+.swift in Sources */,
 				07C002BD2C4DA52400BC266E /* MessageRepositoryImpl.swift in Sources */,
 				07C002A22C4D791500BC266E /* APIService.swift in Sources */,
@@ -507,27 +544,36 @@
 				07C002B72C4D9C9600BC266E /* DIContainer.swift in Sources */,
 				07C002CA2C4DB1CD00BC266E /* RunRepositoryImpl.swift in Sources */,
 				0715CE722C5B57D200A313D4 /* SearchView.swift in Sources */,
+				79851E322C5A9B770055C451 /* Memory.swift in Sources */,
 				07C002B22C4D8FE300BC266E /* DiarySheet.swift in Sources */,
 				07C002AE2C4D8B4100BC266E /* ThreadRepositoryImpl.swift in Sources */,
 				07EDE4DC2C5A99B200E757C1 /* AssistantInteractionFacade.swift in Sources */,
 				07C002A82C4D8ACA00BC266E /* ThreadResponse.swift in Sources */,
 				07C002DA2C4DBC0000BC266E /* RetrieveMessageUseCase.swift in Sources */,
-				070E99602C4CEC5A00A319C3 /* Memory.swift in Sources */,
+				070E99602C4CEC5A00A319C3 /* MemoryEntity.swift in Sources */,
 				07C002A62C4D8A6F00BC266E /* ThreadRepository.swift in Sources */,
+				79851E2C2C5A8BF50055C451 /* JournalSelectionView.swift in Sources */,
 				07C002B92C4DA2CD00BC266E /* MessageRepository.swift in Sources */,
 				07CC80612C5B89AF00BE2250 /* CategorizedMemoriesView.swift in Sources */,
 				0775284B2C5B2982005F681F /* QuizView.swift in Sources */,
 				07C002D82C4DBB1300BC266E /* RetrieveMessageResponse.swift in Sources */,
+				79851E232C5A80F40055C451 /* MemoryUseCase.swift in Sources */,
+				79851E252C5A81600055C451 /* MemoryRepositoryImpl.swift in Sources */,
 				07C002AA2C4D8AE300BC266E /* Message.swift in Sources */,
 				07C002D12C4DB56F00BC266E /* RunStepRepository.swift in Sources */,
 				07CC805E2C5B873A00BE2250 /* MemoryCategoryGrid.swift in Sources */,
+				79851E2E2C5A8C0F0055C451 /* JournalEntryView.swift in Sources */,
 				07C002B02C4D8C6800BC266E /* CreateThreadUseCase.swift in Sources */,
+				79851E212C5A7F980055C451 /* MemoryRepository.swift in Sources */,
 				07E29A5C2C5B2241004668C5 /* ImagePicker.swift in Sources */,
 				077528482C5B27BB005F681F /* QuizOptionCard.swift in Sources */,
 				070E99672C4CF49C00A319C3 /* MainView.swift in Sources */,
 				07C002BB2C4DA47200BC266E /* CreateMessageResponse.swift in Sources */,
+				79851E302C5A8C200055C451 /* JournalEntryViewModel.swift in Sources */,
+				79851E342C5AAB2F0055C451 /* MemoryDatabase.swift in Sources */,
 				07C002C62C4DB0D500BC266E /* RunRequest.swift in Sources */,
 				075655482C4CD80100376467 /* ContentView.swift in Sources */,
+				79851E2A2C5A81F30055C451 /* MemorySwiftDataImpl.swift in Sources */,
 				07E29A5E2C5B2275004668C5 /* ImagePickerViewModel.swift in Sources */,
 				0715CE742C5B61C000A313D4 /* SearchViewModel.swift in Sources */,
 				07C002D42C4DB5D700BC266E /* RunStepRepositoryImpl.swift in Sources */,

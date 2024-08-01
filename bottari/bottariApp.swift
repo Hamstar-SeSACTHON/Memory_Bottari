@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct bottariApp: App {
     @StateObject private var container = DIContainer.shared
+    @StateObject var appViewModel = AppViewModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(container)
                 .environmentObject(NavigationManager())
+                .environmentObject(appViewModel)
         }
+        .modelContainer(MemoryDatabase.shared.container)
     }
 }
