@@ -367,6 +367,7 @@
 				79851E352C5AAD020055C451 /* MemoryDAO.swift */,
 			);
 			path = SwiftData;
+		};
 		07EDE4D82C5A99A300E757C1 /* Facades */ = {
 			isa = PBXGroup;
 			children = (
