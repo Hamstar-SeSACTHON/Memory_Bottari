@@ -20,14 +20,13 @@ final class MemoryDAO {
         let fetchDescriptor = FetchDescriptor<MemoryEntity>()
         let memoriEntities = try memoryDatabase.context.fetch(fetchDescriptor)
         let memories = memoriEntities.map { memoryEntity in
-            return Memory(id: memoryEntity.id ,date: memoryEntity.date, image: memoryEntity.image, title: memoryEntity.title, content: memoryEntity.content, isBookmarked: memoryEntity.isBookmarked)
+            return Memory(id: memoryEntity.id ,date: memoryEntity.date, image: memoryEntity.image, title: memoryEntity.title, content: memoryEntity.content, isBookmarked: memoryEntity.isBookmarked, tags: memoryEntity.tags)
         }
         return memories
     }
     
     func insert(memory: Memory) {
-        let memoryEntity = MemoryEntity(id: memory.id, date: memory.date, image: memory.image, title: memory.title, content: memory.content, isBookmarked: memory.isBookmarked
-        )
+        let memoryEntity = MemoryEntity(id: memory.id, date: memory.date, image: memory.image, title: memory.title, content: memory.content, isBookmarked: memory.isBookmarked, tags: memory.tags)
         memoryDatabase.context.insert(memoryEntity)
         Task {
             try memoryDatabase.context.save()
@@ -56,7 +55,7 @@ final class MemoryDAO {
                                         image: memory.image,
                                         title: memory.title,
                                         content: memory.content,
-                                        isBookmarked: memory.isBookmarked
+                                        isBookmarked: memory.isBookmarked, tags: memory.tags
         )
         memoryDatabase.context.insert(memoryEntity)
         do {try memoryDatabase.context.save()
