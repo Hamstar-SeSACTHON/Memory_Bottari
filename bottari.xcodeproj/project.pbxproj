@@ -44,21 +44,42 @@
 		07C002D62C4DB71A00BC266E /* ListRunStepUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */; };
 		07C002D82C4DBB1300BC266E /* RetrieveMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */; };
 		07C002DA2C4DBC0000BC266E /* RetrieveMessageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */; };
-		79851E212C5A7F980055C451 /* MemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E202C5A7F980055C451 /* MemoryRepository.swift */; };
-		79851E232C5A80F40055C451 /* MemoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E222C5A80F40055C451 /* MemoryUseCase.swift */; };
-		79851E252C5A81600055C451 /* MemoryRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E242C5A81600055C451 /* MemoryRepositoryImpl.swift */; };
-		79851E2A2C5A81F30055C451 /* MemorySwiftDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E292C5A81F30055C451 /* MemorySwiftDataImpl.swift */; };
-		79851E2C2C5A8BF50055C451 /* JournalSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E2B2C5A8BF50055C451 /* JournalSelectionView.swift */; };
-		79851E2E2C5A8C0F0055C451 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E2D2C5A8C0F0055C451 /* JournalEntryView.swift */; };
-		79851E302C5A8C200055C451 /* JournalEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E2F2C5A8C200055C451 /* JournalEntryViewModel.swift */; };
-		79851E322C5A9B770055C451 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E312C5A9B770055C451 /* Memory.swift */; };
-		79851E342C5AAB2F0055C451 /* MemoryDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */; };
-		79851E362C5AAD020055C451 /* MemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E352C5AAD020055C451 /* MemoryDAO.swift */; };
 		07E29A5C2C5B2241004668C5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E29A5B2C5B2241004668C5 /* ImagePicker.swift */; };
 		07E29A5E2C5B2275004668C5 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */; };
 		07EDE4D92C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */; };
 		07EDE4DC2C5A99B200E757C1 /* AssistantInteractionFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */; };
-		07EDE4DE2C5A9A1700E757C1 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */; };
+		79851E212C5A7F980055C451 /* MemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E202C5A7F980055C451 /* MemoryRepository.swift */; };
+		79851E252C5A81600055C451 /* MemoryRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E242C5A81600055C451 /* MemoryRepositoryImpl.swift */; };
+		79851E322C5A9B770055C451 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E312C5A9B770055C451 /* Memory.swift */; };
+		79D3D3D52C5C27710017B791 /* MemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3D02C5C27710017B791 /* MemoryDAO.swift */; };
+		79D3D3D62C5C27710017B791 /* MemoryDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3D12C5C27710017B791 /* MemoryDatabase.swift */; };
+		79D3D3D72C5C27710017B791 /* MemorySwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3D22C5C27710017B791 /* MemorySwiftData.swift */; };
+		79D3D3D82C5C27710017B791 /* MemorySwiftDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3D32C5C27710017B791 /* MemorySwiftDataImpl.swift */; };
+		79D3D3DA2C5C279E0017B791 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3D92C5C279E0017B791 /* AppViewModel.swift */; };
+		79D3D3DC2C5C27A40017B791 /* JournalSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3DB2C5C27A40017B791 /* JournalSelectionViewModel.swift */; };
+		79D3D3EC2C5C27AE0017B791 /* CustomTitleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3DD2C5C27AE0017B791 /* CustomTitleAlert.swift */; };
+		79D3D3ED2C5C27AE0017B791 /* DividerWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3DE2C5C27AE0017B791 /* DividerWithLabel.swift */; };
+		79D3D3EE2C5C27AE0017B791 /* FocusableTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3DF2C5C27AE0017B791 /* FocusableTextEditor.swift */; };
+		79D3D3EF2C5C27AE0017B791 /* TopicRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3E02C5C27AE0017B791 /* TopicRectangleView.swift */; };
+		79D3D3F02C5C27AE0017B791 /* CustomAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3E22C5C27AE0017B791 /* CustomAlertModifier.swift */; };
+		79D3D3F12C5C27AE0017B791 /* CustomButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3E32C5C27AE0017B791 /* CustomButtonModifier.swift */; };
+		79D3D3F22C5C27AE0017B791 /* JournalButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3E52C5C27AE0017B791 /* JournalButtonStyle.swift */; };
+		79D3D3F32C5C27AE0017B791 /* TopicStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3E62C5C27AE0017B791 /* TopicStyle.swift */; };
+		79D3D3F42C5C27AE0017B791 /* JournalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3E82C5C27AE0017B791 /* JournalDetailView.swift */; };
+		79D3D3F52C5C27AE0017B791 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3E92C5C27AE0017B791 /* JournalEntryView.swift */; };
+		79D3D3F62C5C27AE0017B791 /* JournalSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3EA2C5C27AE0017B791 /* JournalSelectionView.swift */; };
+		79D3D3F82C5C27C20017B791 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 79D3D3F72C5C27C20017B791 /* Secrets.xcconfig */; };
+		79D3D3FE2C5C28100017B791 /* DeleteMemoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3F92C5C28100017B791 /* DeleteMemoryUseCase.swift */; };
+		79D3D3FF2C5C28100017B791 /* GetMemoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3FA2C5C28100017B791 /* GetMemoriesUseCase.swift */; };
+		79D3D4002C5C28100017B791 /* InsertMemoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3FB2C5C28100017B791 /* InsertMemoryUseCase.swift */; };
+		79D3D4012C5C28100017B791 /* UpdateMemoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D3FC2C5C28100017B791 /* UpdateMemoryUseCase.swift */; };
+		79D3D4032C5C28460017B791 /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D4022C5C28460017B791 /* DateFormatter+.swift */; };
+		79D3D4052C5C284B0017B791 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D4042C5C284B0017B791 /* View+.swift */; };
+		79D3D4072C5C28690017B791 /* GetAllTopicsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D4062C5C28690017B791 /* GetAllTopicsUseCase.swift */; };
+		79D3D4092C5C28980017B791 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D4082C5C28980017B791 /* Topic.swift */; };
+		79D3D40B2C5C28B60017B791 /* TopicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D40A2C5C28B60017B791 /* TopicRepository.swift */; };
+		79D3D40D2C5C28C70017B791 /* TopicRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D40C2C5C28C70017B791 /* TopicRepositoryImpl.swift */; };
+		79D3D40F2C5C28E30017B791 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3D40E2C5C28E30017B791 /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,21 +123,42 @@
 		07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageResponse.swift; sourceTree = "<group>"; };
 		07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageUseCase.swift; sourceTree = "<group>"; };
 		07C002DC2C4DC5B600BC266E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		79851E202C5A7F980055C451 /* MemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryRepository.swift; sourceTree = "<group>"; };
-		79851E222C5A80F40055C451 /* MemoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryUseCase.swift; sourceTree = "<group>"; };
-		79851E242C5A81600055C451 /* MemoryRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryRepositoryImpl.swift; sourceTree = "<group>"; };
-		79851E292C5A81F30055C451 /* MemorySwiftDataImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySwiftDataImpl.swift; sourceTree = "<group>"; };
-		79851E2B2C5A8BF50055C451 /* JournalSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalSelectionView.swift; sourceTree = "<group>"; };
-		79851E2D2C5A8C0F0055C451 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
-		79851E2F2C5A8C200055C451 /* JournalEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewModel.swift; sourceTree = "<group>"; };
-		79851E312C5A9B770055C451 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
-		79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDatabase.swift; sourceTree = "<group>"; };
-		79851E352C5AAD020055C451 /* MemoryDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDAO.swift; sourceTree = "<group>"; };
 		07E29A5B2C5B2241004668C5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacadeImpl.swift; sourceTree = "<group>"; };
 		07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacade.swift; sourceTree = "<group>"; };
-		07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		79851E202C5A7F980055C451 /* MemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryRepository.swift; sourceTree = "<group>"; };
+		79851E242C5A81600055C451 /* MemoryRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryRepositoryImpl.swift; sourceTree = "<group>"; };
+		79851E312C5A9B770055C451 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		79D3D3D02C5C27710017B791 /* MemoryDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryDAO.swift; sourceTree = "<group>"; };
+		79D3D3D12C5C27710017B791 /* MemoryDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryDatabase.swift; sourceTree = "<group>"; };
+		79D3D3D22C5C27710017B791 /* MemorySwiftData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemorySwiftData.swift; sourceTree = "<group>"; };
+		79D3D3D32C5C27710017B791 /* MemorySwiftDataImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemorySwiftDataImpl.swift; sourceTree = "<group>"; };
+		79D3D3D92C5C279E0017B791 /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		79D3D3DB2C5C27A40017B791 /* JournalSelectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalSelectionViewModel.swift; sourceTree = "<group>"; };
+		79D3D3DD2C5C27AE0017B791 /* CustomTitleAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTitleAlert.swift; sourceTree = "<group>"; };
+		79D3D3DE2C5C27AE0017B791 /* DividerWithLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerWithLabel.swift; sourceTree = "<group>"; };
+		79D3D3DF2C5C27AE0017B791 /* FocusableTextEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusableTextEditor.swift; sourceTree = "<group>"; };
+		79D3D3E02C5C27AE0017B791 /* TopicRectangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicRectangleView.swift; sourceTree = "<group>"; };
+		79D3D3E22C5C27AE0017B791 /* CustomAlertModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertModifier.swift; sourceTree = "<group>"; };
+		79D3D3E32C5C27AE0017B791 /* CustomButtonModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonModifier.swift; sourceTree = "<group>"; };
+		79D3D3E52C5C27AE0017B791 /* JournalButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalButtonStyle.swift; sourceTree = "<group>"; };
+		79D3D3E62C5C27AE0017B791 /* TopicStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicStyle.swift; sourceTree = "<group>"; };
+		79D3D3E82C5C27AE0017B791 /* JournalDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalDetailView.swift; sourceTree = "<group>"; };
+		79D3D3E92C5C27AE0017B791 /* JournalEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
+		79D3D3EA2C5C27AE0017B791 /* JournalSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalSelectionView.swift; sourceTree = "<group>"; };
+		79D3D3F72C5C27C20017B791 /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Secrets.xcconfig; path = ../../../../Downloads/Secrets.xcconfig; sourceTree = "<group>"; };
+		79D3D3F92C5C28100017B791 /* DeleteMemoryUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMemoryUseCase.swift; sourceTree = "<group>"; };
+		79D3D3FA2C5C28100017B791 /* GetMemoriesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMemoriesUseCase.swift; sourceTree = "<group>"; };
+		79D3D3FB2C5C28100017B791 /* InsertMemoryUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertMemoryUseCase.swift; sourceTree = "<group>"; };
+		79D3D3FC2C5C28100017B791 /* UpdateMemoryUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateMemoryUseCase.swift; sourceTree = "<group>"; };
+		79D3D4022C5C28460017B791 /* DateFormatter+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
+		79D3D4042C5C284B0017B791 /* View+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		79D3D4062C5C28690017B791 /* GetAllTopicsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetAllTopicsUseCase.swift; path = bottari/Domain/UseCases/GetAllTopicsUseCase.swift; sourceTree = SOURCE_ROOT; };
+		79D3D4082C5C28980017B791 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		79D3D40A2C5C28B60017B791 /* TopicRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicRepository.swift; sourceTree = "<group>"; };
+		79D3D40C2C5C28C70017B791 /* TopicRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicRepositoryImpl.swift; sourceTree = "<group>"; };
+		79D3D40E2C5C28E30017B791 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +181,7 @@
 				07C002C42C4DB0CB00BC266E /* Run */,
 				070E995D2C4CEC4F00A319C3 /* Quiz.swift */,
 				070E995F2C4CEC5A00A319C3 /* MemoryEntity.swift */,
+				79D3D4082C5C28980017B791 /* Topic.swift */,
 				07C002A92C4D8AE300BC266E /* Message.swift */,
 				07C002AB2C4D8AF300BC266E /* MessageBody.swift */,
 				79851E312C5A9B770055C451 /* Memory.swift */,
@@ -159,12 +202,11 @@
 		070E99652C4CF49000A319C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				79D3D3EB2C5C27AE0017B791 /* Journal */,
 				070E99662C4CF49C00A319C3 /* MainView.swift */,
 				070E99682C4CF56900A319C3 /* MemoryView.swift */,
 				075655472C4CD80100376467 /* ContentView.swift */,
 				07C002B12C4D8FE300BC266E /* DiarySheet.swift */,
-				79851E2B2C5A8BF50055C451 /* JournalSelectionView.swift */,
-				79851E2D2C5A8C0F0055C451 /* JournalEntryView.swift */,
 				07E29A5B2C5B2241004668C5 /* ImagePicker.swift */,
 			);
 			path = Views;
@@ -183,7 +225,7 @@
 		070E996B2C4D0EF700A319C3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				79851E282C5A81DD0055C451 /* SwiftData */,
+				79D3D3D42C5C27710017B791 /* SwiftData */,
 				07EDE4D82C5A99A300E757C1 /* Facades */,
 				07C002A02C4D790800BC266E /* API */,
 				070E99712C4D0F7500A319C3 /* Repositories */,
@@ -203,12 +245,12 @@
 		070E996D2C4D0F3800A319C3 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				79D3D3FD2C5C28100017B791 /* Memory */,
 				07C002AF2C4D8C6800BC266E /* CreateThreadUseCase.swift */,
 				07C002BE2C4DA8B500BC266E /* CreateMessageUseCase.swift */,
 				07C002CB2C4DB26F00BC266E /* CreateRunUseCase.swift */,
 				07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */,
 				07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */,
-				79851E222C5A80F40055C451 /* MemoryUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -229,6 +271,7 @@
 				07C002B82C4DA2CD00BC266E /* MessageRepository.swift */,
 				07C002C02C4DAD7900BC266E /* RunRepository.swift */,
 				07C002D02C4DB56F00BC266E /* RunStepRepository.swift */,
+				79D3D40A2C5C28B60017B791 /* TopicRepository.swift */,
 				79851E202C5A7F980055C451 /* MemoryRepository.swift */,
 			);
 			path = Repositories;
@@ -237,8 +280,9 @@
 		070E99702C4D0F6300A319C3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				79D3D3D92C5C279E0017B791 /* AppViewModel.swift */,
+				79D3D3DB2C5C27A40017B791 /* JournalSelectionViewModel.swift */,
 				07C002B32C4D97F800BC266E /* DiarySheetViewModel.swift */,
-				79851E2F2C5A8C200055C451 /* JournalEntryViewModel.swift */,
 				07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */,
 			);
 			path = ViewModels;
@@ -247,6 +291,7 @@
 		070E99712C4D0F7500A319C3 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				79D3D40C2C5C28C70017B791 /* TopicRepositoryImpl.swift */,
 				07C002AD2C4D8B4100BC266E /* ThreadRepositoryImpl.swift */,
 				07C002BC2C4DA52400BC266E /* MessageRepositoryImpl.swift */,
 				07C002C92C4DB1CD00BC266E /* RunRepositoryImpl.swift */,
@@ -268,6 +313,8 @@
 		07389D792C5B1674002D4FB3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				79D3D4042C5C284B0017B791 /* View+.swift */,
+				79D3D4022C5C28460017B791 /* DateFormatter+.swift */,
 				07389D7A2C5B1680002D4FB3 /* Font+.swift */,
 			);
 			path = Extensions;
@@ -300,7 +347,7 @@
 				070E99642C4CF48800A319C3 /* Presentation */,
 				075655452C4CD80100376467 /* bottariApp.swift */,
 				0756554B2C4CD80300376467 /* bottari.entitlements */,
-				07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */,
+				79D3D3F72C5C27C20017B791 /* Secrets.xcconfig */,
 				0756554C2C4CD80300376467 /* Preview Content */,
 			);
 			path = bottari;
@@ -326,6 +373,7 @@
 		07C002B52C4D9C8700BC266E /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				79D3D40E2C5C28E30017B791 /* KeyboardResponder.swift */,
 				07C002B62C4D9C9600BC266E /* DIContainer.swift */,
 			);
 			path = Infrastructure;
@@ -365,15 +413,6 @@
 			path = RunStep;
 			sourceTree = "<group>";
 		};
-		79851E282C5A81DD0055C451 /* SwiftData */ = {
-			isa = PBXGroup;
-			children = (
-				79851E292C5A81F30055C451 /* MemorySwiftDataImpl.swift */,
-				79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */,
-				79851E352C5AAD020055C451 /* MemoryDAO.swift */,
-			);
-			path = SwiftData;
-		};
 		07EDE4D82C5A99A300E757C1 /* Facades */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +427,71 @@
 				07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */,
 			);
 			path = Facades;
+			sourceTree = "<group>";
+		};
+		79D3D3D42C5C27710017B791 /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				79D3D3D02C5C27710017B791 /* MemoryDAO.swift */,
+				79D3D3D12C5C27710017B791 /* MemoryDatabase.swift */,
+				79D3D3D22C5C27710017B791 /* MemorySwiftData.swift */,
+				79D3D3D32C5C27710017B791 /* MemorySwiftDataImpl.swift */,
+			);
+			path = SwiftData;
+			sourceTree = "<group>";
+		};
+		79D3D3E12C5C27AE0017B791 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				79D3D3DD2C5C27AE0017B791 /* CustomTitleAlert.swift */,
+				79D3D3DE2C5C27AE0017B791 /* DividerWithLabel.swift */,
+				79D3D3DF2C5C27AE0017B791 /* FocusableTextEditor.swift */,
+				79D3D3E02C5C27AE0017B791 /* TopicRectangleView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		79D3D3E42C5C27AE0017B791 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				79D3D3E22C5C27AE0017B791 /* CustomAlertModifier.swift */,
+				79D3D3E32C5C27AE0017B791 /* CustomButtonModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		79D3D3E72C5C27AE0017B791 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				79D3D3E52C5C27AE0017B791 /* JournalButtonStyle.swift */,
+				79D3D3E62C5C27AE0017B791 /* TopicStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		79D3D3EB2C5C27AE0017B791 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				79D3D3E12C5C27AE0017B791 /* Components */,
+				79D3D3E42C5C27AE0017B791 /* Modifier */,
+				79D3D3E72C5C27AE0017B791 /* Styles */,
+				79D3D3E82C5C27AE0017B791 /* JournalDetailView.swift */,
+				79D3D3E92C5C27AE0017B791 /* JournalEntryView.swift */,
+				79D3D3EA2C5C27AE0017B791 /* JournalSelectionView.swift */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		79D3D3FD2C5C28100017B791 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				79D3D3F92C5C28100017B791 /* DeleteMemoryUseCase.swift */,
+				79D3D4062C5C28690017B791 /* GetAllTopicsUseCase.swift */,
+				79D3D3FA2C5C28100017B791 /* GetMemoriesUseCase.swift */,
+				79D3D3FB2C5C28100017B791 /* InsertMemoryUseCase.swift */,
+				79D3D3FC2C5C28100017B791 /* UpdateMemoryUseCase.swift */,
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,9 +558,9 @@
 			files = (
 				0756554E2C4CD80300376467 /* Preview Assets.xcassets in Resources */,
 				07389D7F2C5B16B3002D4FB3 /* Pretendard-Medium.otf in Resources */,
+				79D3D3F82C5C27C20017B791 /* Secrets.xcconfig in Resources */,
 				07389D7E2C5B16B3002D4FB3 /* Pretendard-Bold.otf in Resources */,
 				0756554A2C4CD80300376467 /* Assets.xcassets in Resources */,
-				07EDE4DE2C5A9A1700E757C1 /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,41 +572,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				070E99692C4CF56900A319C3 /* MemoryView.swift in Sources */,
-				79851E362C5AAD020055C451 /* MemoryDAO.swift in Sources */,
+				79D3D40F2C5C28E30017B791 /* KeyboardResponder.swift in Sources */,
+				79D3D4012C5C28100017B791 /* UpdateMemoryUseCase.swift in Sources */,
 				07389D7B2C5B1680002D4FB3 /* Font+.swift in Sources */,
 				07C002BD2C4DA52400BC266E /* MessageRepositoryImpl.swift in Sources */,
+				79D3D4052C5C284B0017B791 /* View+.swift in Sources */,
 				07C002A22C4D791500BC266E /* APIService.swift in Sources */,
 				07C002B42C4D97F800BC266E /* DiarySheetViewModel.swift in Sources */,
 				07C002A42C4D7A6100BC266E /* EndPoint.swift in Sources */,
+				79D3D4072C5C28690017B791 /* GetAllTopicsUseCase.swift in Sources */,
+				79D3D3D52C5C27710017B791 /* MemoryDAO.swift in Sources */,
 				07C002AC2C4D8AF300BC266E /* MessageBody.swift in Sources */,
 				07C002B72C4D9C9600BC266E /* DIContainer.swift in Sources */,
 				07C002CA2C4DB1CD00BC266E /* RunRepositoryImpl.swift in Sources */,
 				79851E322C5A9B770055C451 /* Memory.swift in Sources */,
 				07C002B22C4D8FE300BC266E /* DiarySheet.swift in Sources */,
 				07C002AE2C4D8B4100BC266E /* ThreadRepositoryImpl.swift in Sources */,
+				79D3D3D72C5C27710017B791 /* MemorySwiftData.swift in Sources */,
+				79D3D3EC2C5C27AE0017B791 /* CustomTitleAlert.swift in Sources */,
 				07EDE4DC2C5A99B200E757C1 /* AssistantInteractionFacade.swift in Sources */,
 				07C002A82C4D8ACA00BC266E /* ThreadResponse.swift in Sources */,
+				79D3D4032C5C28460017B791 /* DateFormatter+.swift in Sources */,
+				79D3D4092C5C28980017B791 /* Topic.swift in Sources */,
+				79D3D3F62C5C27AE0017B791 /* JournalSelectionView.swift in Sources */,
 				07C002DA2C4DBC0000BC266E /* RetrieveMessageUseCase.swift in Sources */,
+				79D3D3F52C5C27AE0017B791 /* JournalEntryView.swift in Sources */,
+				79D3D3FF2C5C28100017B791 /* GetMemoriesUseCase.swift in Sources */,
+				79D3D40D2C5C28C70017B791 /* TopicRepositoryImpl.swift in Sources */,
+				79D3D3F02C5C27AE0017B791 /* CustomAlertModifier.swift in Sources */,
+				79D3D3F22C5C27AE0017B791 /* JournalButtonStyle.swift in Sources */,
 				070E99602C4CEC5A00A319C3 /* MemoryEntity.swift in Sources */,
+				79D3D3D62C5C27710017B791 /* MemoryDatabase.swift in Sources */,
 				07C002A62C4D8A6F00BC266E /* ThreadRepository.swift in Sources */,
-				79851E2C2C5A8BF50055C451 /* JournalSelectionView.swift in Sources */,
 				07C002B92C4DA2CD00BC266E /* MessageRepository.swift in Sources */,
+				79D3D3EF2C5C27AE0017B791 /* TopicRectangleView.swift in Sources */,
+				79D3D3ED2C5C27AE0017B791 /* DividerWithLabel.swift in Sources */,
 				07C002D82C4DBB1300BC266E /* RetrieveMessageResponse.swift in Sources */,
-				79851E232C5A80F40055C451 /* MemoryUseCase.swift in Sources */,
 				79851E252C5A81600055C451 /* MemoryRepositoryImpl.swift in Sources */,
 				07C002AA2C4D8AE300BC266E /* Message.swift in Sources */,
+				79D3D3FE2C5C28100017B791 /* DeleteMemoryUseCase.swift in Sources */,
+				79D3D3DA2C5C279E0017B791 /* AppViewModel.swift in Sources */,
 				07C002D12C4DB56F00BC266E /* RunStepRepository.swift in Sources */,
-				79851E2E2C5A8C0F0055C451 /* JournalEntryView.swift in Sources */,
+				79D3D3DC2C5C27A40017B791 /* JournalSelectionViewModel.swift in Sources */,
 				07C002B02C4D8C6800BC266E /* CreateThreadUseCase.swift in Sources */,
 				79851E212C5A7F980055C451 /* MemoryRepository.swift in Sources */,
 				07E29A5C2C5B2241004668C5 /* ImagePicker.swift in Sources */,
 				070E99672C4CF49C00A319C3 /* MainView.swift in Sources */,
+				79D3D3F42C5C27AE0017B791 /* JournalDetailView.swift in Sources */,
 				07C002BB2C4DA47200BC266E /* CreateMessageResponse.swift in Sources */,
-				79851E302C5A8C200055C451 /* JournalEntryViewModel.swift in Sources */,
-				79851E342C5AAB2F0055C451 /* MemoryDatabase.swift in Sources */,
+				79D3D3F12C5C27AE0017B791 /* CustomButtonModifier.swift in Sources */,
 				07C002C62C4DB0D500BC266E /* RunRequest.swift in Sources */,
 				075655482C4CD80100376467 /* ContentView.swift in Sources */,
-				79851E2A2C5A81F30055C451 /* MemorySwiftDataImpl.swift in Sources */,
+				79D3D3D82C5C27710017B791 /* MemorySwiftDataImpl.swift in Sources */,
+				79D3D3EE2C5C27AE0017B791 /* FocusableTextEditor.swift in Sources */,
+				79D3D4002C5C28100017B791 /* InsertMemoryUseCase.swift in Sources */,
 				07E29A5E2C5B2275004668C5 /* ImagePickerViewModel.swift in Sources */,
 				07C002D42C4DB5D700BC266E /* RunStepRepositoryImpl.swift in Sources */,
 				07C002BF2C4DA8B500BC266E /* CreateMessageUseCase.swift in Sources */,
@@ -510,10 +633,12 @@
 				07C002C32C4DB02700BC266E /* RunResponse.swift in Sources */,
 				07C002D62C4DB71A00BC266E /* ListRunStepUseCase.swift in Sources */,
 				07C002CC2C4DB26F00BC266E /* CreateRunUseCase.swift in Sources */,
+				79D3D3F32C5C27AE0017B791 /* TopicStyle.swift in Sources */,
 				07C002CF2C4DB50F00BC266E /* RunStepResponse.swift in Sources */,
 				075655462C4CD80100376467 /* bottariApp.swift in Sources */,
 				070E995E2C4CEC4F00A319C3 /* Quiz.swift in Sources */,
 				07EDE4D92C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift in Sources */,
+				79D3D40B2C5C28B60017B791 /* TopicRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,7 +761,6 @@
 		};
 		075655522C4CD80300376467 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -677,7 +801,6 @@
 		};
 		075655532C4CD80300376467 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
