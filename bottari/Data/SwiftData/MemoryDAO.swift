@@ -20,7 +20,7 @@ final class MemoryDAO {
         let fetchDescriptor = FetchDescriptor<MemoryEntity>()
         let memoriEntities = try memoryDatabase.context.fetch(fetchDescriptor)
         let memories = memoriEntities.map { memoryEntity in
-            return Memory(date: memoryEntity.date, image: memoryEntity.image, title: memoryEntity.title, content: memoryEntity.content, isBookmarked: memoryEntity.isBookmarked)
+            return Memory(id: memoryEntity.id ,date: memoryEntity.date, image: memoryEntity.image, title: memoryEntity.title, content: memoryEntity.content, isBookmarked: memoryEntity.isBookmarked)
         }
         return memories
     }
@@ -52,31 +52,16 @@ final class MemoryDAO {
     
     func update(memory: Memory) throws {
         let memoryEntity = MemoryEntity(id: memory.id,
-            date: memory.date, image: memory.image, title: memory.title, content: memory.content, isBookmarked: memory.isBookmarked
+                                        date: memory.date,
+                                        image: memory.image,
+                                        title: memory.title,
+                                        content: memory.content,
+                                        isBookmarked: memory.isBookmarked
         )
         memoryDatabase.context.insert(memoryEntity)
         do {try memoryDatabase.context.save()
             print("dssdsd")
         } catch {print("asd")}
         
-//        let dateToUpdate = memory.date
-//        let fetchDescriptor = FetchDescriptor<MemoryEntity>(
-//            predicate: #Predicate<MemoryEntity> { entity in
-//                entity.date == dateToUpdate
-//            }
-//        )
-//        
-//        if (try memoryDatabase.context.fetch(fetchDescriptor).first) != nil {
-//            do {
-//                try memoryDatabase.context.save()
-//                print("Memory updated successfully")
-//            } catch {
-//                print("Failed to save context: \(error.localizedDescription)")
-//                throw error
-//            }
-//        } else {
-//            print("Cannot update: Memory not found")
-//            throw NSError(domain: "MemoryUpdateError", code: 404, userInfo: [NSLocalizedDescriptionKey: "Memory not found"])
-//        }
     }
 }
