@@ -8,60 +8,23 @@
 import SwiftUI
 
 struct MainView: View {
-    
+    @State private var isFloatingButtonClicked = false
+    @EnvironmentObject var container: DIContainer
     @EnvironmentObject var navigationManager: NavigationManager
-    @EnvironmentObject var appViewModel: AppViewModel
-    @State private var quiz: Quiz?
-    @State private var selectedAnswer: String?
-    @State private var showJudgement = false
+    let quiz = Quiz(date: Date(), question: "어제 누구의 생일을 축하했나요?", options: ["친구", "큰 딸 민정이", "둘째 딸 민지"], correctOption: "큰 딸 민정이", successMessage: "어제 큰 딸의 생일을 축하했어요")
     
     var body: some View {
         NavigationStack(path: $navigationManager.screenPath) {
             ZStack {
-                Image("background")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity)
+                Color.gray200
                 
-                VStack(spacing: 0) {
-                    if let quiz2 = quiz {
-                        QuizView(selectedAnswer: $selectedAnswer, showJudgement: $showJudgement, quiz: $quiz)
-                    }
-                    
-                    HStack {
-                        Spacer()
-                        
-                        if selectedAnswer == nil {
-                            Image("ddari")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 103)
-                                .offset(y: -25)
-                        } else if quiz?.correctOption == selectedAnswer {
-                            Image("ddari_smile")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 103)
-                                .offset(y: -25)
-                        } else {
-                            Image("ddari_wink")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 103)
-                                .offset(y: -25)
-                        }
-                    }
-                    
+                VStack {
+                    QuizView(quiz: quiz)
                     Spacer()
+                    floatingButton
                     
                 }
             }
-            .onReceive(appViewModel.$memoryList, perform: { _ in
-                print(appViewModel.memoryList)
-                if !appViewModel.memoryList.isEmpty {
-                    quiz = appViewModel.memoryList.randomElement()!.quizzes.randomElement()
-                }
-            })
             .navigationDestination(for: AppScreen.self) { appScreen in
                 appScreen.destination
             }
@@ -76,11 +39,27 @@ struct MainView: View {
                 
                 
             }
-            
+            .sheet(isPresented: $isFloatingButtonClicked) {
+                if let createThreadUseCase = container.resolve(CreateThreadUseCase.self), let createMesssageUseCase = container.resolve(CreateMessageUseCase.self), let createRunUseCase = container.resolve(CreateRunUseCase.self), let listRunStepUseCase = container.resolve(ListRunStepUseCase.self), let retrieveMessageUseCase = container.resolve(RetrieveMessageUseCase.self)  {
+                    DiarySheet(viewModel: DiarySheetViewModel(assistantInteractionFacade: AssistantInteractionFacadeImpl(createThreadUseCase: createThreadUseCase, createMessageUseCase: createMesssageUseCase, createRunUseCase: createRunUseCase, listRunStepUseCase: listRunStepUseCase, retrieveMessageUseCase: retrieveMessageUseCase)))
+                }
+            }
         }
     }
     
-    
+    private var floatingButton: some View {
+        Image(systemName: "plus")
+            .font(.system(size: 30))
+            .foregroundStyle(.white)
+            .padding()
+            .background {
+                Circle()
+                    .fill(.blue)
+            }
+            .onTapGesture {
+                isFloatingButtonClicked.toggle()
+            }
+    }
 }
 
 #Preview {

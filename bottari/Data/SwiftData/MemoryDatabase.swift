@@ -16,7 +16,7 @@ final class MemoryDatabase {
     
     init() {
         container =  {
-            let schema = Schema([MemoryEntity.self, QuizEntity.self])
+            let schema = Schema([MemoryEntity.self])
             do {
                 let container = try ModelContainer(for: schema, configurations: [])
                 return container
@@ -31,7 +31,7 @@ final class MemoryDatabase {
         func deleteDatabase() throws {
             container.deleteAllData()
             container = {
-                let schema = Schema([MemoryEntity.self, QuizEntity.self])
+                let schema = Schema([MemoryEntity.self])
                 do {
                     let container = try ModelContainer(for: schema, configurations: [])
                     return container

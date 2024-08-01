@@ -10,10 +10,8 @@ import SwiftUI
 import Combine
 import SwiftData
 
-//@MainActor
+@MainActor
 final class AppViewModel: ObservableObject {
-    static let shared = AppViewModel()
-    
     @Published var memoryList: [Memory] = []
     
     private let getMemoriesUseCase = GetMemoriesUseCase.shared
@@ -21,7 +19,7 @@ final class AppViewModel: ObservableObject {
     private let deleteMemoryUseCase = DeleteMemoryUseCase.shared
     private let updateMemoryUseCase = UpdateMemoryUseCase.shared
     
-    private init() {
+    init() {
         Task {
             try await getMemories()
         }
@@ -50,6 +48,7 @@ final class AppViewModel: ObservableObject {
     func updateMemory(memory: Memory) async throws {
         do {
             try await updateMemoryUseCase.execute(memory: memory)
+            print("업데이트?")
             try await getMemories()
         }
     }

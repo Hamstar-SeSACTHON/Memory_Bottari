@@ -14,5 +14,4 @@ struct Memory: Hashable {
     var title: String
     var content: String
     var tags: [String]
-    var quizzes: [Quiz]
 }

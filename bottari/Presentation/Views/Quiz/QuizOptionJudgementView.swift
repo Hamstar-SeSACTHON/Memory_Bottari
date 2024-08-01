@@ -14,7 +14,6 @@ struct QuizOptionJudgementView: View {
     @Binding var showJudgement: Bool
     let correctOption: String
     let successMessage: String
-    let action: () -> ()
     
     var body: some View {
         VStack(spacing: 8) {
@@ -35,28 +34,6 @@ struct QuizOptionJudgementView: View {
             Text(successMessage)
                 .font(.pretendMedium16)
                 .foregroundStyle(.gray500)
-                .padding(.bottom, 32)
-            
-            Button {
-                action()
-                withAnimation {
-                    selectOption = nil
-                    showJudgement = false
-                }
-            } label: {
-                HStack(spacing: 10) {
-                    Text("다음 퀴즈")
-                        .font(.pretendBold16)
-                        .foregroundStyle(.gray200)
-                    Image(systemName: "arrow.right")
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundStyle(.gray200)
-                        
-                }
-                .padding(.vertical, 12)
-                .padding(.horizontal, 27)
-                .background(RoundedRectangle(cornerRadius: 16).fill(.gray600))
-            }
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
@@ -75,30 +52,19 @@ struct QuizOptionJudgementView: View {
             Text("다시 한번 해봐요!")
                 .font(.pretendBold32)
                 .foregroundStyle(.gray600)
-                .padding(.bottom, 19)
-            
-            Button {
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 withAnimation {
                     selectOption = nil
                     showJudgement = false
                 }
-            } label: {
-                HStack(spacing: 10) {
-                    Image(systemName: "arrow.circlepath")
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundStyle(.gray200)
-                    
-                    Text("다시 하기")
-                        .font(.pretendBold16)
-                        .foregroundStyle(.gray200)
-                    
-                    
-                }
-                .padding(.vertical, 12)
-                .padding(.horizontal, 27)
-                .background(RoundedRectangle(cornerRadius: 16).fill(.gray600))
             }
         }
         
     }
+}
+
+#Preview {
+    QuizOptionJudgementView(selectOption: .constant("안녕"), showJudgement: .constant(false), correctOption: "안녕", successMessage: "어제 큰 딸의 생일을 축하했어요!")
 }

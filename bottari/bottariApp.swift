@@ -11,7 +11,7 @@ import SwiftData
 @main
 struct bottariApp: App {
     @StateObject private var container = DIContainer.shared
-    @StateObject var appViewModel = AppViewModel.shared
+    @StateObject var appViewModel = AppViewModel()
     
     var body: some Scene {
         WindowGroup {

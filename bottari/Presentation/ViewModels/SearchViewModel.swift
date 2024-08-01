@@ -7,29 +7,24 @@
 
 import Combine
 import Foundation
-import SwiftUI
 
 class SearchViewModel: ObservableObject {
     @Published var memories: [Memory] = [
-        
+        Memory(date: Date(), image: "", title: "테스트1", content: "테스트1 일기 내용입니다.", isBookmarked: false, tags: ["최근 검색1", "최근 검색2"]),
+        Memory(date: Date(), image: "", title: "테스트1", content: "테스트1 일기 내용입니다.", isBookmarked: false, tags: ["최근 검색1", "최근 검색2"]),
+        Memory(date: Date(), image: "", title: "테스트1", content: "테스트1 일기 내용입니다.", isBookmarked: false, tags: ["최근 검색1", "최근 검색2"]),
+        Memory(date: Date(), image: "", title: "테스트1", content: "테스트1 일기 내용입니다.", isBookmarked: false, tags: ["최근 검색1", "최근 검색2"]),
     ]
     
     @Published var filteredMemories: [Memory] = []
     @Published var recentSearchTerms: [String] = ["최근 검색1", "최근 검색2", "최근 검색3"]
     @Published var searchText = ""
     @Published var tags: Set<String> = ["손자와의 추억", "친구들과의 하루", "맛있는 음식", "1년 전 기억"]
-    var appViewModel = AppViewModel.shared
-    
     
     private var cancellables = Set<AnyCancellable>()
     
     init() {
         loadRecentSearchTerm()
-        
-        
-        appViewModel.$memoryList
-            .assign(to: \.memories, on: self)
-            .store(in: &cancellables)
         
         $searchText
             .debounce(for: .milliseconds(300), scheduler: RunLoop.main)

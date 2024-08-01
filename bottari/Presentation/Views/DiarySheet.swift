@@ -22,7 +22,7 @@ struct DiarySheet: View {
             TextField("일기를 입력해주세요", text: $content)
             
             Button("전송") {
-                viewModel.handleCompleteButtonClick(title: nil, content: content, image: nil)
+                viewModel.sendMessage(content)
             }
             
             if let uiImage = imagePickerViewModel.selectedImage {
@@ -36,7 +36,7 @@ struct DiarySheet: View {
                 isPickerPresented.toggle()
             }
             
-            Text(viewModel.receivedMessage.map { $0.description } ?? "메세지 검색 nil")
+            Text(viewModel.receivedMessage ?? "메세지 검색 nil")
             Text(viewModel.errorMessage ?? "에러 메시지")
         }
         .sheet(isPresented: $isPickerPresented) {

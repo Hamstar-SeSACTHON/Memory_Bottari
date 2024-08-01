@@ -106,8 +106,8 @@ class AssistantInteractionFacadeImpl: AssistantInteractionFacade {
                 }
                 return response
             }
-            .retry(100)
-            .timeout(40, scheduler: DispatchQueue.main, customError: { NSError(domain: "AssistantInteractionFacade", code: 2, userInfo: [NSLocalizedDescriptionKey: "Operation timed out"]) })
+            .retry(20)
+            .timeout(10, scheduler: DispatchQueue.main, customError: { NSError(domain: "AssistantInteractionFacade", code: 2, userInfo: [NSLocalizedDescriptionKey: "Operation timed out"]) })
             .handleEvents(receiveOutput: { [weak self] response in
                 self?.runStepResponse = response
             })
@@ -126,8 +126,8 @@ class AssistantInteractionFacadeImpl: AssistantInteractionFacade {
                 }
                 return response
             }
-            .retry(100)
-            .timeout(40, scheduler: DispatchQueue.main, customError: { NSError(domain: "AssistantInteractionFacade", code: 2, userInfo: [NSLocalizedDescriptionKey: "Operation timed out"]) })
+            .retry(20)
+            .timeout(10, scheduler: DispatchQueue.main, customError: { NSError(domain: "AssistantInteractionFacade", code: 2, userInfo: [NSLocalizedDescriptionKey: "Operation timed out"]) })
             .handleEvents(receiveOutput: { [weak self] response in
                 self?.retrieveMessageResponse = response
                 print(response)

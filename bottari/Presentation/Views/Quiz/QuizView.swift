@@ -8,18 +8,14 @@
 import SwiftUI
 
 struct QuizView: View {
-    @Binding var selectedAnswer: String?
-    @Binding var showJudgement: Bool
-    @EnvironmentObject var appViewModel: AppViewModel
-    @Binding var quiz: Quiz?
+    @State private var selectedAnswer: String?
+    @State private var showJudgement = false
+    let quiz: Quiz
     
     var body: some View {
         ZStack {
             if showJudgement, let _ = selectedAnswer {
-                QuizOptionJudgementView(selectOption: $selectedAnswer, showJudgement: $showJudgement, correctOption: quiz?.correctOption ?? "", successMessage: quiz?.successMessage ?? "") {
-                    guard let quiz2 = appViewModel.memoryList.randomElement()?.quizzes.randomElement() else { return }
-                    quiz = quiz2
-                }
+                QuizOptionJudgementView(selectOption: $selectedAnswer, showJudgement: $showJudgement, correctOption: quiz.correctOption, successMessage: quiz.successMessage)
             } else {
                 quizView
             }
@@ -48,7 +44,7 @@ struct QuizView: View {
     
     private var quizOptions: some View {
         HStack(spacing: 8) {
-            ForEach(Array(quiz!.options.enumerated()), id: \.offset) { index, option in
+            ForEach(Array(quiz.options.enumerated()), id: \.offset) { index, option in
                 QuizAnswerCard(selectedAnswer: $selectedAnswer, index: index+1, option: option)
             }
         }
@@ -61,9 +57,12 @@ struct QuizView: View {
             .frame(width: 68)
     }
     private var question: some View {
-        Text(quiz?.question ?? "")
+        Text(quiz.question)
             .font(.pretendBold20)
             .foregroundStyle(.gray600)
     }
 }
 
+#Preview {
+    QuizView(quiz: Quiz(date: Date(), question: "어제 누구의 생일을 축하했나요?", options: ["친구", "큰 딸 민정이", "둘째 딸 민지"], correctOption: "큰 딸 민정이", successMessage: "어제 큰 딸의 생일을 축하했어요"))
+}

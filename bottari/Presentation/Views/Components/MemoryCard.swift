@@ -45,3 +45,7 @@ struct MemoryCard: View {
             .fill(.gray200)
     }
 }
+
+#Preview {
+    MemoryCard(memory: Memory(date: Date(), image: "", title: "타이틀 폰트 사이즈 20에서 18로 변경 결과", content: "기억 본문입니다 쏘니아가 검정색 옷을 입고...", isBookmarked: false, tags: []))
+}

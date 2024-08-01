@@ -8,34 +8,16 @@
 import SwiftUI
 
 struct MemoryView: View {
-    @State private var isFloatingButtonClicked = false
-    @EnvironmentObject var container: DIContainer
     @EnvironmentObject var navigationManager: NavigationManager
-    @EnvironmentObject var appViewModel: AppViewModel
     
     var body: some View {
-        ZStack {
-            ScrollView {
-                VStack(spacing: 16) {
-                    header
-                        .padding(.top, 28)
-                    memorylist
-                    
-                    Spacer()
-                    
-                    
-                    
-                }
-                .padding(.horizontal, 24)
-                
-                Spacer()
-                floatingButton
+        ScrollView {
+            VStack(spacing: 16) {
+                header
+                    .padding(.top, 28)
+                memorylist
             }
-            .sheet(isPresented: $isFloatingButtonClicked) {
-                if let createThreadUseCase = container.resolve(CreateThreadUseCase.self), let createMesssageUseCase = container.resolve(CreateMessageUseCase.self), let createRunUseCase = container.resolve(CreateRunUseCase.self), let listRunStepUseCase = container.resolve(ListRunStepUseCase.self), let retrieveMessageUseCase = container.resolve(RetrieveMessageUseCase.self)  {
-                    DiarySheet(viewModel: DiarySheetViewModel(assistantInteractionFacade: AssistantInteractionFacadeImpl(createThreadUseCase: createThreadUseCase, createMessageUseCase: createMesssageUseCase, createRunUseCase: createRunUseCase, listRunStepUseCase: listRunStepUseCase, retrieveMessageUseCase: retrieveMessageUseCase)))
-                }
-            }
+            .padding(.horizontal, 24)
         }
     }
     
@@ -45,34 +27,22 @@ struct MemoryView: View {
                 .font(.pretendBold24)
                 .foregroundStyle(.gray600)
             Spacer()
-//            Image(systemName: "magnifyingglass")
-//                .font(.system(size: 24, weight: .semibold))
-//                .foregroundStyle(.gray600)
-//                .onTapGesture {
-//                    navigationManager.screenPath.append(.search)
-//                }
+            Image(systemName: "magnifyingglass")
+                .font(.system(size: 24, weight: .semibold))
+                .foregroundStyle(.gray600)
+                .onTapGesture {
+                    navigationManager.screenPath.append(.search)
+                }
+            
+            
         }
     }
     private var memorylist: some View {
         VStack(spacing: 12) {
-            ForEach(appViewModel.memoryList, id: \.self) { memory in
-                MemoryCard(memory: memory)
+            ForEach(0..<4, id: \.self) { _ in
+                MemoryCard(memory: Memory(date: Date(), image: "", title: "타이틀 폰트 사이즈 20에서 18로 변경 결과", content: "기억 본문입니다 쏘니아가 검정색 옷을 입고...", isBookmarked: false, tags: []))
             }
         }
-    }
-    
-    private var floatingButton: some View {
-        Image(systemName: "plus")
-            .font(.system(size: 30))
-            .foregroundStyle(.white)
-            .padding()
-            .background {
-                Circle()
-                    .fill(.gray600)
-            }
-            .onTapGesture {
-                isFloatingButtonClicked.toggle()
-            }
     }
 }
 
