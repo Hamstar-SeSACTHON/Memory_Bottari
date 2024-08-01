@@ -54,6 +54,8 @@
 		79851E322C5A9B770055C451 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E312C5A9B770055C451 /* Memory.swift */; };
 		79851E342C5AAB2F0055C451 /* MemoryDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */; };
 		79851E362C5AAD020055C451 /* MemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E352C5AAD020055C451 /* MemoryDAO.swift */; };
+		07E29A5C2C5B2241004668C5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E29A5B2C5B2241004668C5 /* ImagePicker.swift */; };
+		07E29A5E2C5B2275004668C5 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */; };
 		07EDE4D92C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */; };
 		07EDE4DC2C5A99B200E757C1 /* AssistantInteractionFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */; };
 		07EDE4DE2C5A9A1700E757C1 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */; };
@@ -110,6 +112,8 @@
 		79851E312C5A9B770055C451 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDatabase.swift; sourceTree = "<group>"; };
 		79851E352C5AAD020055C451 /* MemoryDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDAO.swift; sourceTree = "<group>"; };
+		07E29A5B2C5B2241004668C5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacadeImpl.swift; sourceTree = "<group>"; };
 		07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacade.swift; sourceTree = "<group>"; };
 		07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				07C002B12C4D8FE300BC266E /* DiarySheet.swift */,
 				79851E2B2C5A8BF50055C451 /* JournalSelectionView.swift */,
 				79851E2D2C5A8C0F0055C451 /* JournalEntryView.swift */,
+				07E29A5B2C5B2241004668C5 /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			children = (
 				07C002B32C4D97F800BC266E /* DiarySheetViewModel.swift */,
 				79851E2F2C5A8C200055C451 /* JournalEntryViewModel.swift */,
+				07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -489,6 +495,7 @@
 				79851E2E2C5A8C0F0055C451 /* JournalEntryView.swift in Sources */,
 				07C002B02C4D8C6800BC266E /* CreateThreadUseCase.swift in Sources */,
 				79851E212C5A7F980055C451 /* MemoryRepository.swift in Sources */,
+				07E29A5C2C5B2241004668C5 /* ImagePicker.swift in Sources */,
 				070E99672C4CF49C00A319C3 /* MainView.swift in Sources */,
 				07C002BB2C4DA47200BC266E /* CreateMessageResponse.swift in Sources */,
 				79851E302C5A8C200055C451 /* JournalEntryViewModel.swift in Sources */,
@@ -496,6 +503,7 @@
 				07C002C62C4DB0D500BC266E /* RunRequest.swift in Sources */,
 				075655482C4CD80100376467 /* ContentView.swift in Sources */,
 				79851E2A2C5A81F30055C451 /* MemorySwiftDataImpl.swift in Sources */,
+				07E29A5E2C5B2275004668C5 /* ImagePickerViewModel.swift in Sources */,
 				07C002D42C4DB5D700BC266E /* RunStepRepositoryImpl.swift in Sources */,
 				07C002BF2C4DA8B500BC266E /* CreateMessageUseCase.swift in Sources */,
 				07C002C12C4DAD7900BC266E /* RunRepository.swift in Sources */,
