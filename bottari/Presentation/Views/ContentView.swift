@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var navigationManager: NavigationManager
     
     var body: some View {
-        VStack {
-            MainView()
-        }
+        MainView()
     }
 }
 
