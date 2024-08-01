@@ -15,6 +15,7 @@ struct bottariApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(container)
+                .environmentObject(NavigationManager())
         }
     }
 }
