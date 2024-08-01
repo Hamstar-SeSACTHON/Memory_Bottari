@@ -22,8 +22,7 @@ class AssistantInteractionFacadeImpl: AssistantInteractionFacade {
     private let retrieveMessageUseCase: RetrieveMessageUseCase
     
     private var assistantID: String {
-        guard let assistantID = Bundle.main.object(forInfoDictionaryKey: "ASSISTANT_ID") as? String else { print("뭐지")
-            return "" }
+        guard let assistantID = Bundle.main.object(forInfoDictionaryKey: "ASSISTANT_ID") as? String else { return "" }
         return assistantID
     }
     

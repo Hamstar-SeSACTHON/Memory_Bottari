@@ -11,6 +11,9 @@
 		070E99602C4CEC5A00A319C3 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E995F2C4CEC5A00A319C3 /* Memory.swift */; };
 		070E99672C4CF49C00A319C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E99662C4CF49C00A319C3 /* MainView.swift */; };
 		070E99692C4CF56900A319C3 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E99682C4CF56900A319C3 /* MemoryView.swift */; };
+		07389D7B2C5B1680002D4FB3 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07389D7A2C5B1680002D4FB3 /* Font+.swift */; };
+		07389D7E2C5B16B3002D4FB3 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07389D7C2C5B16B3002D4FB3 /* Pretendard-Bold.otf */; };
+		07389D7F2C5B16B3002D4FB3 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07389D7D2C5B16B3002D4FB3 /* Pretendard-Medium.otf */; };
 		075655462C4CD80100376467 /* bottariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075655452C4CD80100376467 /* bottariApp.swift */; };
 		075655482C4CD80100376467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075655472C4CD80100376467 /* ContentView.swift */; };
 		0756554A2C4CD80300376467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075655492C4CD80300376467 /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 		070E995F2C4CEC5A00A319C3 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		070E99662C4CF49C00A319C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		070E99682C4CF56900A319C3 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
+		07389D7A2C5B1680002D4FB3 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		07389D7C2C5B16B3002D4FB3 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		07389D7D2C5B16B3002D4FB3 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		075655422C4CD80100376467 /* bottari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bottari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		075655452C4CD80100376467 /* bottariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottariApp.swift; sourceTree = "<group>"; };
 		075655472C4CD80100376467 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		070E99642C4CF48800A319C3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				07389D792C5B1674002D4FB3 /* Extensions */,
 				070E99702C4D0F6300A319C3 /* ViewModels */,
 				070E99652C4CF49000A319C3 /* Views */,
 			);
@@ -158,6 +165,7 @@
 		070E996C2C4D0F1F00A319C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				07389D782C5B1664002D4FB3 /* Fonts */,
 				075655492C4CD80300376467 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -212,6 +220,23 @@
 				07C002D32C4DB5D700BC266E /* RunStepRepositoryImpl.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		07389D782C5B1664002D4FB3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				07389D7C2C5B16B3002D4FB3 /* Pretendard-Bold.otf */,
+				07389D7D2C5B16B3002D4FB3 /* Pretendard-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		07389D792C5B1674002D4FB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07389D7A2C5B1680002D4FB3 /* Font+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		075655392C4CD80100376467 = {
@@ -385,6 +410,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0756554E2C4CD80300376467 /* Preview Assets.xcassets in Resources */,
+				07389D7F2C5B16B3002D4FB3 /* Pretendard-Medium.otf in Resources */,
+				07389D7E2C5B16B3002D4FB3 /* Pretendard-Bold.otf in Resources */,
 				0756554A2C4CD80300376467 /* Assets.xcassets in Resources */,
 				07EDE4DE2C5A9A1700E757C1 /* Secrets.xcconfig in Resources */,
 			);
@@ -398,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070E99692C4CF56900A319C3 /* MemoryView.swift in Sources */,
+				07389D7B2C5B1680002D4FB3 /* Font+.swift in Sources */,
 				07C002BD2C4DA52400BC266E /* MessageRepositoryImpl.swift in Sources */,
 				07C002A22C4D791500BC266E /* APIService.swift in Sources */,
 				07C002B42C4D97F800BC266E /* DiarySheetViewModel.swift in Sources */,
