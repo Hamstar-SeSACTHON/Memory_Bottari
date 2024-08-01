@@ -45,7 +45,7 @@ final class APIService {
     
     private func setCommonHeaders(for request: inout URLRequest) {
         guard let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String else { return }
-
+        
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
         request.setValue("assistants=v2", forHTTPHeaderField: "OpenAI-Beta")

@@ -11,6 +11,9 @@
 		070E99602C4CEC5A00A319C3 /* MemoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E995F2C4CEC5A00A319C3 /* MemoryEntity.swift */; };
 		070E99672C4CF49C00A319C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E99662C4CF49C00A319C3 /* MainView.swift */; };
 		070E99692C4CF56900A319C3 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E99682C4CF56900A319C3 /* MemoryView.swift */; };
+		07389D7B2C5B1680002D4FB3 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07389D7A2C5B1680002D4FB3 /* Font+.swift */; };
+		07389D7E2C5B16B3002D4FB3 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07389D7C2C5B16B3002D4FB3 /* Pretendard-Bold.otf */; };
+		07389D7F2C5B16B3002D4FB3 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07389D7D2C5B16B3002D4FB3 /* Pretendard-Medium.otf */; };
 		075655462C4CD80100376467 /* bottariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075655452C4CD80100376467 /* bottariApp.swift */; };
 		075655482C4CD80100376467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075655472C4CD80100376467 /* ContentView.swift */; };
 		0756554A2C4CD80300376467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075655492C4CD80300376467 /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 		79851E322C5A9B770055C451 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E312C5A9B770055C451 /* Memory.swift */; };
 		79851E342C5AAB2F0055C451 /* MemoryDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */; };
 		79851E362C5AAD020055C451 /* MemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79851E352C5AAD020055C451 /* MemoryDAO.swift */; };
+		07EDE4D92C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */; };
+		07EDE4DC2C5A99B200E757C1 /* AssistantInteractionFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */; };
+		07EDE4DE2C5A9A1700E757C1 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +64,9 @@
 		070E995F2C4CEC5A00A319C3 /* MemoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryEntity.swift; sourceTree = "<group>"; tabWidth = 2; };
 		070E99662C4CF49C00A319C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		070E99682C4CF56900A319C3 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
+		07389D7A2C5B1680002D4FB3 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		07389D7C2C5B16B3002D4FB3 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		07389D7D2C5B16B3002D4FB3 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		075655422C4CD80100376467 /* bottari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bottari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		075655452C4CD80100376467 /* bottariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottariApp.swift; sourceTree = "<group>"; };
 		075655472C4CD80100376467 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +110,9 @@
 		79851E312C5A9B770055C451 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		79851E332C5AAB2F0055C451 /* MemoryDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDatabase.swift; sourceTree = "<group>"; };
 		79851E352C5AAD020055C451 /* MemoryDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDAO.swift; sourceTree = "<group>"; };
+		07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacadeImpl.swift; sourceTree = "<group>"; };
+		07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacade.swift; sourceTree = "<group>"; };
+		07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +145,7 @@
 		070E99642C4CF48800A319C3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				07389D792C5B1674002D4FB3 /* Extensions */,
 				070E99702C4D0F6300A319C3 /* ViewModels */,
 				070E99652C4CF49000A319C3 /* Views */,
 			);
@@ -166,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				79851E282C5A81DD0055C451 /* SwiftData */,
+				07EDE4D82C5A99A300E757C1 /* Facades */,
 				07C002A02C4D790800BC266E /* API */,
 				070E99712C4D0F7500A319C3 /* Repositories */,
 			);
@@ -175,6 +189,7 @@
 		070E996C2C4D0F1F00A319C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				07389D782C5B1664002D4FB3 /* Fonts */,
 				075655492C4CD80300376467 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -196,6 +211,7 @@
 		070E996E2C4D0F4600A319C3 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				07EDE4DB2C5A99B200E757C1 /* Facades */,
 				070E996F2C4D0F5600A319C3 /* Repositories */,
 			);
 			path = Interfaces;
@@ -234,6 +250,23 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		07389D782C5B1664002D4FB3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				07389D7C2C5B16B3002D4FB3 /* Pretendard-Bold.otf */,
+				07389D7D2C5B16B3002D4FB3 /* Pretendard-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		07389D792C5B1674002D4FB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07389D7A2C5B1680002D4FB3 /* Font+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		075655392C4CD80100376467 = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +294,7 @@
 				070E99642C4CF48800A319C3 /* Presentation */,
 				075655452C4CD80100376467 /* bottariApp.swift */,
 				0756554B2C4CD80300376467 /* bottari.entitlements */,
+				07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */,
 				0756554C2C4CD80300376467 /* Preview Content */,
 			);
 			path = bottari;
@@ -333,6 +367,20 @@
 				79851E352C5AAD020055C451 /* MemoryDAO.swift */,
 			);
 			path = SwiftData;
+		07EDE4D82C5A99A300E757C1 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */,
+			);
+			path = Facades;
+			sourceTree = "<group>";
+		};
+		07EDE4DB2C5A99B200E757C1 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */,
+			);
+			path = Facades;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,7 +446,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0756554E2C4CD80300376467 /* Preview Assets.xcassets in Resources */,
+				07389D7F2C5B16B3002D4FB3 /* Pretendard-Medium.otf in Resources */,
+				07389D7E2C5B16B3002D4FB3 /* Pretendard-Bold.otf in Resources */,
 				0756554A2C4CD80300376467 /* Assets.xcassets in Resources */,
+				07EDE4DE2C5A9A1700E757C1 /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +462,7 @@
 			files = (
 				070E99692C4CF56900A319C3 /* MemoryView.swift in Sources */,
 				79851E362C5AAD020055C451 /* MemoryDAO.swift in Sources */,
+				07389D7B2C5B1680002D4FB3 /* Font+.swift in Sources */,
 				07C002BD2C4DA52400BC266E /* MessageRepositoryImpl.swift in Sources */,
 				07C002A22C4D791500BC266E /* APIService.swift in Sources */,
 				07C002B42C4D97F800BC266E /* DiarySheetViewModel.swift in Sources */,
@@ -421,6 +473,7 @@
 				79851E322C5A9B770055C451 /* Memory.swift in Sources */,
 				07C002B22C4D8FE300BC266E /* DiarySheet.swift in Sources */,
 				07C002AE2C4D8B4100BC266E /* ThreadRepositoryImpl.swift in Sources */,
+				07EDE4DC2C5A99B200E757C1 /* AssistantInteractionFacade.swift in Sources */,
 				07C002A82C4D8ACA00BC266E /* ThreadResponse.swift in Sources */,
 				07C002DA2C4DBC0000BC266E /* RetrieveMessageUseCase.swift in Sources */,
 				070E99602C4CEC5A00A319C3 /* MemoryEntity.swift in Sources */,
@@ -451,6 +504,7 @@
 				07C002CF2C4DB50F00BC266E /* RunStepResponse.swift in Sources */,
 				075655462C4CD80100376467 /* bottariApp.swift in Sources */,
 				070E995E2C4CEC4F00A319C3 /* Quiz.swift in Sources */,
+				07EDE4D92C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +627,7 @@
 		};
 		075655522C4CD80300376467 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -613,6 +668,7 @@
 		};
 		075655532C4CD80300376467 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
