@@ -56,7 +56,7 @@ final class MemoryDAO {
                                         image: memory.image,
                                         title: memory.title,
                                         content: memory.content,
-                                        isBookmarked: memory.isBookmarked
+                                        isBookmarked: memory.isBookmarked, tags: memory.tags
         )
         memoryDatabase.context.insert(memoryEntity)
         do {try memoryDatabase.context.save()
