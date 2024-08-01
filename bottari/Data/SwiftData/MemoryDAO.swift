@@ -26,8 +26,7 @@ final class MemoryDAO {
     }
     
     func insert(memory: Memory) {
-        let memoryEntity = MemoryEntity(id: memory.id, date: memory.date, image: memory.image, title: memory.title, content: memory.content, isBookmarked: memory.isBookmarked, tags: memory.tags
-        )
+        let memoryEntity = MemoryEntity(id: memory.id, date: memory.date, image: memory.image, title: memory.title, content: memory.content, isBookmarked: memory.isBookmarked, tags: memory.tags)
         memoryDatabase.context.insert(memoryEntity)
         Task {
             try memoryDatabase.context.save()
