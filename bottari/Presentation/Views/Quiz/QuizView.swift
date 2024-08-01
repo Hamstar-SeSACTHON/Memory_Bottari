@@ -63,6 +63,3 @@ struct QuizView: View {
     }
 }
 
-#Preview {
-    QuizView(quiz: Quiz(date: Date(), question: "어제 누구의 생일을 축하했나요?", options: ["친구", "큰 딸 민정이", "둘째 딸 민지"], correctOption: "큰 딸 민정이", successMessage: "어제 큰 딸의 생일을 축하했어요"))
-}
