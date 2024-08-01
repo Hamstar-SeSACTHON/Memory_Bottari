@@ -44,6 +44,8 @@
 		07C002D62C4DB71A00BC266E /* ListRunStepUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D52C4DB71A00BC266E /* ListRunStepUseCase.swift */; };
 		07C002D82C4DBB1300BC266E /* RetrieveMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */; };
 		07C002DA2C4DBC0000BC266E /* RetrieveMessageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */; };
+		07E29A5C2C5B2241004668C5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E29A5B2C5B2241004668C5 /* ImagePicker.swift */; };
+		07E29A5E2C5B2275004668C5 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */; };
 		07EDE4D92C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */; };
 		07EDE4DC2C5A99B200E757C1 /* AssistantInteractionFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */; };
 		07EDE4DE2C5A9A1700E757C1 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */; };
@@ -90,6 +92,8 @@
 		07C002D72C4DBB1300BC266E /* RetrieveMessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageResponse.swift; sourceTree = "<group>"; };
 		07C002D92C4DBC0000BC266E /* RetrieveMessageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveMessageUseCase.swift; sourceTree = "<group>"; };
 		07C002DC2C4DC5B600BC266E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		07E29A5B2C5B2241004668C5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		07EDE4D72C5A99A300E757C1 /* AssistantInteractionFacadeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacadeImpl.swift; sourceTree = "<group>"; };
 		07EDE4DA2C5A99B200E757C1 /* AssistantInteractionFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantInteractionFacade.swift; sourceTree = "<group>"; };
 		07EDE4DD2C5A9A1700E757C1 /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				070E99682C4CF56900A319C3 /* MemoryView.swift */,
 				075655472C4CD80100376467 /* ContentView.swift */,
 				07C002B12C4D8FE300BC266E /* DiarySheet.swift */,
+				07E29A5B2C5B2241004668C5 /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				07C002B32C4D97F800BC266E /* DiarySheetViewModel.swift */,
+				07E29A5D2C5B2275004668C5 /* ImagePickerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -445,10 +451,12 @@
 				07C002AA2C4D8AE300BC266E /* Message.swift in Sources */,
 				07C002D12C4DB56F00BC266E /* RunStepRepository.swift in Sources */,
 				07C002B02C4D8C6800BC266E /* CreateThreadUseCase.swift in Sources */,
+				07E29A5C2C5B2241004668C5 /* ImagePicker.swift in Sources */,
 				070E99672C4CF49C00A319C3 /* MainView.swift in Sources */,
 				07C002BB2C4DA47200BC266E /* CreateMessageResponse.swift in Sources */,
 				07C002C62C4DB0D500BC266E /* RunRequest.swift in Sources */,
 				075655482C4CD80100376467 /* ContentView.swift in Sources */,
+				07E29A5E2C5B2275004668C5 /* ImagePickerViewModel.swift in Sources */,
 				07C002D42C4DB5D700BC266E /* RunStepRepositoryImpl.swift in Sources */,
 				07C002BF2C4DA8B500BC266E /* CreateMessageUseCase.swift in Sources */,
 				07C002C12C4DAD7900BC266E /* RunRepository.swift in Sources */,
