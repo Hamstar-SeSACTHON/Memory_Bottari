@@ -28,6 +28,7 @@ Icon
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
@@ -72,6 +73,7 @@ DerivedData/
 *.ipa
 *.dSYM.zip
 *.dSYM
+*.xcuserstate
 
 ## Playgrounds
 timeline.xctimeline
