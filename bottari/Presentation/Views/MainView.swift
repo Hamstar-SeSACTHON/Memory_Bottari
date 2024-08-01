@@ -12,17 +12,48 @@ struct MainView: View {
     @EnvironmentObject var navigationManager: NavigationManager
     @EnvironmentObject var appViewModel: AppViewModel
     @State private var quiz: Quiz?
+    @State private var selectedAnswer: String?
+    @State private var showJudgement = false
     
     var body: some View {
         NavigationStack(path: $navigationManager.screenPath) {
             ZStack {
-                Color.gray200
+                Image("background")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: .infinity)
                 
-                VStack {
+                VStack(spacing: 0) {
                     if let quiz2 = quiz {
-                        QuizView(quiz: quiz2)
+                        QuizView(selectedAnswer: $selectedAnswer, showJudgement: $showJudgement, quiz: $quiz)
                     }
+                    
+                    HStack {
+                        Spacer()
+                        
+                        if selectedAnswer == nil {
+                            Image("ddari")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 103)
+                                .offset(y: -25)
+                        } else if quiz?.correctOption == selectedAnswer {
+                            Image("ddari_smile")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 103)
+                                .offset(y: -25)
+                        } else {
+                            Image("ddari_wink")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 103)
+                                .offset(y: -25)
+                        }
+                    }
+                    
                     Spacer()
+                    
                 }
             }
             .onReceive(appViewModel.$memoryList, perform: { _ in
