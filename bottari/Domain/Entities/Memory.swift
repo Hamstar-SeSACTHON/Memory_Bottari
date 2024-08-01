@@ -8,11 +8,12 @@
 import Combine
 import Foundation
 
-struct Memory {
+struct Memory: Hashable {
     let date: Date
     let image: String?
     let title: String
     let content: String
     let isBookmarked: Bool
+    var tags: [String]
 }
 
