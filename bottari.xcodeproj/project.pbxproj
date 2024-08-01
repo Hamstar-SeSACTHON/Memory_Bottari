@@ -428,6 +428,7 @@
 			);
 			path = Memory;
 			sourceTree = "<group>";
+		},
 		79851E282C5A81DD0055C451 /* SwiftData */ = {
 			isa = PBXGroup;
 			children = (
