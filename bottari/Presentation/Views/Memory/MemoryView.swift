@@ -14,18 +14,23 @@ struct MemoryView: View {
     @EnvironmentObject var appViewModel: AppViewModel
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 16) {
-                header
-                    .padding(.top, 28)
-                memorylist
+        ZStack {
+            ScrollView {
+                VStack(spacing: 16) {
+                    header
+                        .padding(.top, 28)
+                    memorylist
+                    
+                    Spacer()
+                    
+                    
+                    
+                }
+                .padding(.horizontal, 24)
                 
                 Spacer()
-                
                 floatingButton
-                
             }
-            .padding(.horizontal, 24)
             .sheet(isPresented: $isFloatingButtonClicked) {
                 if let createThreadUseCase = container.resolve(CreateThreadUseCase.self), let createMesssageUseCase = container.resolve(CreateMessageUseCase.self), let createRunUseCase = container.resolve(CreateRunUseCase.self), let listRunStepUseCase = container.resolve(ListRunStepUseCase.self), let retrieveMessageUseCase = container.resolve(RetrieveMessageUseCase.self)  {
                     DiarySheet(viewModel: DiarySheetViewModel(assistantInteractionFacade: AssistantInteractionFacadeImpl(createThreadUseCase: createThreadUseCase, createMessageUseCase: createMesssageUseCase, createRunUseCase: createRunUseCase, listRunStepUseCase: listRunStepUseCase, retrieveMessageUseCase: retrieveMessageUseCase)))
@@ -40,12 +45,12 @@ struct MemoryView: View {
                 .font(.pretendBold24)
                 .foregroundStyle(.gray600)
             Spacer()
-            Image(systemName: "magnifyingglass")
-                .font(.system(size: 24, weight: .semibold))
-                .foregroundStyle(.gray600)
-                .onTapGesture {
-                    navigationManager.screenPath.append(.search)
-                }
+//            Image(systemName: "magnifyingglass")
+//                .font(.system(size: 24, weight: .semibold))
+//                .foregroundStyle(.gray600)
+//                .onTapGesture {
+//                    navigationManager.screenPath.append(.search)
+//                }
         }
     }
     private var memorylist: some View {
@@ -63,7 +68,7 @@ struct MemoryView: View {
             .padding()
             .background {
                 Circle()
-                    .fill(.blue)
+                    .fill(.gray600)
             }
             .onTapGesture {
                 isFloatingButtonClicked.toggle()
