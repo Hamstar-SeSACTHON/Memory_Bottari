@@ -480,8 +480,8 @@
 			);
 			path = Memory;
 			sourceTree = "<group>";
-		};
-		07CC80682C5BA12100BE2250 /* SwiftData */ = {
+		},
+		79851E282C5A81DD0055C451 /* SwiftData */ = {
 			isa = PBXGroup;
 			children = (
 				077E5CF62C5BAF7D0078957B /* Quiz */,
