@@ -6,13 +6,12 @@
 //
 
 import Foundation
-
-struct Memory {
+  
+struct Memory: Hashable {
     let id: UUID
     var date: Date
     var image: String?
     var title: String
     var content: String
-    var isBookmarked: Bool
     var tags: [String]
 }
